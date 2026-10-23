@@ -1,0 +1,143 @@
+# Builds the game-asset-free installer (ZIP + single-file exe) from the repository
+# alone and attaches it to a DRAFT GitHub release. It never publishes: the
+# maintainer reviews the draft and publishes it by hand.
+#
+# Cut a release:   git tag -f v0.0.2-dev && git push -f origin v0.0.2-dev
+# Rebuild a draft: Actions > Release > Run workflow (tag input).
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to create or update as a draft
+        required: true
+        default: v0.0.2-dev
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  installer:
+    runs-on: windows-latest
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install Pillow (exe icon) and genieutils-py (DAT guard)
+        run: python -m pip install --disable-pip-version-check pillow==12.3.0 genieutils-py==0.1.2
+
+      - name: Reserved unit-ID guard
+        # DE reads object IDs 900-999 as class groups; a unit there crashes the game.
+        # package_installer.py runs the same check; this step names the failure.
+        run: python outputs/toolkit/check_reserved_unit_ids.py
+
+      - name: Civ tech tree guard
+        # DE resolves tech_tree_name only against its native civs; a custom name renders an empty tree.
+        run: python outputs/toolkit/check_civ_tech_trees.py
+
+      - name: Transport guard
+        # Every transport (mechs, air transports, ships) must be boardable and able to unload.
+        run: python outputs/toolkit/check_transports.py
+
+      - name: One-AI guard
+        # SWBG ships one AI: no .ai listing files or SWGB Land AI; DE's built-in entries load SWGB Classic AI.
+        run: python outputs/toolkit/check_single_ai.py
+
+      - name: Classic AI map identity guard
+        # DE ignores the maps' resource-1997 effect; the AI XS must set it by map name.
+        run: python outputs/toolkit/check_classic_map_identity.py
+
+      - name: Classic AI Extreme guard
+        # DE's #load-if-defined ignores defconsts; Extreme must load the Hardest rules itself.
+        run: python outputs/toolkit/check_classic_extreme.py
+
+      - name: Worker build-menu guard
+        # DE shows only one building per page position; every buildable building needs its own.
+        run: python outputs/toolkit/check_build_menu.py
+
+      - name: Classic AI Power Core placement guard
+        # DE's building placement ignores SWGB power; the AI places power-dependent buildings at a core.
+        run: python outputs/toolkit/check_classic_power_placement.py
+
+      - name: Build installer ZIP and exe
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          # Downloads the pinned vgmstream r2117 release (SHA-256 checked), packages
+          # payload/ + outputs/installer, compiles the launcher with the .NET Framework
+          # csc.exe and self-tests -ExtractTo.
+          python outputs/toolkit/package_installer.py --out dist
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          $version = python -c "import sys; sys.path.insert(0, 'outputs/toolkit'); import package_installer as p; print(p.VERSION)"
+          if ($env:TAG -ne "v$version") { Write-Host "::warning::Tag $env:TAG does not match installer version $version" }
+
+      - name: Verify checksums
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $sums = @(Get-ChildItem dist -File -Filter *.sha256)
+          if ($sums.Count -ne 2) { throw "Expected 2 checksum files, found $($sums.Count)" }
+          foreach ($s in $sums) {
+            $hash, $name = (Get-Content -LiteralPath $s.FullName -Raw).Trim() -split '\s+', 2
+            $actual = (Get-FileHash -LiteralPath (Join-Path dist $name) -Algorithm SHA256).Hash.ToLowerInvariant()
+            if ($actual -ne $hash) { throw "$name does not match $($s.Name)" }
+            Write-Host "$name  $actual"
+          }
+
+      - name: Create or update the draft release
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $sha = git rev-parse HEAD
+          $files = @(Get-ChildItem dist -File | Where-Object { $_.Name -match '^SWGB-DE-Installer-.*\.(exe|zip)(\.sha256)?$' })
+          if ($files.Count -ne 4) { throw "Expected 4 release files, found $($files.Count)" }
+          $paths = @($files | ForEach-Object FullName)
+          $names = @($files | ForEach-Object Name)
+          $json = gh release view $env:TAG --json isDraft,assets 2>$null
+          if ($LASTEXITCODE -ne 0 -or -not $json) {
+            $notes = @"
+          Automated draft built by GitHub Actions from commit $sha.
+
+          - ``SWGB-DE-Installer-*.exe``: single-file installer (unsigned; SmartScreen: More info > Run anyway).
+          - ``SWGB-DE-Installer-*.zip``: the same files; run ``Install-SWGB-DE.cmd``.
+          - ``*.sha256``: SHA-256 checksums.
+
+          The installer builds SWBG-Data from your own Star Wars Galactic Battlegrounds Saga + Expanding Fronts install and installs SWBG-Logic, or enables the published SWBG-Logic (mod 549437) if you are subscribed to a version whose files match this release. Multiplayer needs the subscribed mod 549437 at the matching version. See INSTALL.md inside the download.
+          "@
+            $notesFile = Join-Path $env:RUNNER_TEMP 'notes.md'
+            Set-Content -LiteralPath $notesFile -Value $notes -Encoding utf8
+            gh release create $env:TAG --draft --target $sha --title "SWGB in AoE2 DE $($env:TAG.TrimStart('v')) (installer preview)" --notes-file $notesFile @paths
+            if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          } else {
+            $release = $json | ConvertFrom-Json
+            if (-not $release.isDraft) { throw "Release $env:TAG is already published; this workflow only creates or updates drafts." }
+            gh release upload $env:TAG @paths --clobber
+            if ($LASTEXITCODE) { exit $LASTEXITCODE }
+            foreach ($a in @($release.assets)) {
+              if ($names -notcontains $a.name) {
+                Write-Host "Removing stale asset $($a.name)"
+                gh release delete-asset $env:TAG $a.name --yes
+                if ($LASTEXITCODE) { exit $LASTEXITCODE }
+              }
+            }
+            gh release edit $env:TAG --draft=true --target $sha
+            if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          }
+          $state = gh release view $env:TAG --json isDraft,url,assets | ConvertFrom-Json
+          if (-not $state.isDraft) { throw 'Release is not a draft' }
+          Write-Host "Draft release: $($state.url)"
+          $state.assets | ForEach-Object { Write-Host "  $($_.name)  $($_.size) bytes" }

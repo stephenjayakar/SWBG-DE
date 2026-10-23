@@ -1,0 +1,1042 @@
+(defconst SWGB_CLASSIC_DIP_BULLY 1)
+#load-if-not-defined TEAMS-LOCKED
+#load-if-defined DIFFICULTY-EASIEST
+; EMPIRE/dip-bully/1
+(defrule
+  (civ-selected 1)
+  (true)
+  =>
+  (set-stance every-human neutral)
+  (set-stance every-computer neutral)
+  (disable-self)
+)
+; EMPIRE/dip-bully/2
+(defrule
+  (civ-selected 1)
+  (cc-players-building-type-count any-human ce-bldg-spaceport > 0)
+  =>
+  (generate-random-number 2)
+  (set-goal ce-personality 50)
+  (disable-self)
+)
+; EMPIRE/dip-bully/3
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  (random-number == 1)
+  =>
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 10)
+  (set-goal ce-personality 4)
+  (disable-self)
+)
+; EMPIRE/dip-bully/4
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  =>
+  (set-goal ce-personality 0)
+  (disable-self)
+)
+; EMPIRE/dip-bully/5
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 4)
+  (taunt-detected any-computer 218)
+  =>
+  (set-goal ce-personality 0)
+  (acknowledge-taunt this-any-computer 218)
+  (disable-timer ce-t-chat)
+  (disable-self)
+)
+; EMPIRE/dip-bully/6
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 4)
+  (timer-triggered ce-t-chat)
+  =>
+  (set-goal ce-personality ce-ALLY)
+  (disable-timer ce-t-chat)
+  (set-stance every-human neutral)
+  (set-stance every-computer neutral)
+  (chat-to-player-using-id every-human 942000)
+  (chat-to-player-using-id every-computer 942400)
+  (disable-self)
+)
+; EMPIRE/dip-bully/7
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (or
+  (or (players-tribute any-human-neutral wood >= 100) (players-tribute any-human-neutral food >= 100))
+  (or (players-tribute any-human-neutral gold >= 100) (players-tribute any-human-neutral stone >= 100))
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942002)
+  (chat-to-player-using-id this-any-human-neutral 942003)
+  (set-stance this-any-human-neutral ally)
+  (set-stance every-computer enemy)
+  (disable-self)
+)
+#end-if
+#load-if-defined DIFFICULTY-EASY
+; EMPIRE/dip-bully/8
+(defrule
+  (civ-selected 1)
+  (cc-players-building-type-count any-human ce-bldg-spaceport > 0)
+  =>
+  (generate-random-number 2)
+  (set-goal ce-personality 50)
+  (disable-self)
+)
+; EMPIRE/dip-bully/9
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  (random-number == 1)
+  =>
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 10)
+  (set-goal ce-personality 4)
+  (disable-self)
+)
+; EMPIRE/dip-bully/10
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  =>
+  (set-goal ce-personality 0)
+  (disable-self)
+)
+; EMPIRE/dip-bully/11
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 4)
+  (taunt-detected any-computer 218)
+  =>
+  (set-goal ce-personality 0)
+  (acknowledge-taunt this-any-computer 218)
+  (disable-timer ce-t-chat)
+  (disable-self)
+)
+; EMPIRE/dip-bully/12
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 4)
+  (timer-triggered ce-t-chat)
+  =>
+  (set-goal ce-personality ce-ALLY)
+  (set-stance every-human neutral)
+  (set-stance every-computer neutral)
+  (chat-to-player-using-id every-computer 942400)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 600)
+  (disable-self)
+)
+; EMPIRE/dip-bully/13
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (starting-resources == low-resources)
+  =>
+  (chat-to-player-using-id every-human 942004)
+  (disable-self)
+)
+; EMPIRE/dip-bully/14
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (starting-resources == medium-resources)
+  =>
+  (chat-to-player-using-id every-human 942006)
+  (disable-self)
+)
+; EMPIRE/dip-bully/15
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (starting-resources == high-resources)
+  (stance-toward any-human neutral)
+  =>
+  (chat-to-player-using-id every-human 942007)
+  (disable-self)
+)
+; EMPIRE/dip-bully/16
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-ALLY)
+  (or
+  (and (starting-resources == low-resources) (players-tribute any-human-neutral wood < 200))
+  (or
+    (and (starting-resources == medium-resources) (players-tribute any-human-neutral wood < 500))
+    (and (starting-resources == high-resources) (players-tribute any-human-neutral wood < 1000))
+  )
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942008)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+)
+; EMPIRE/dip-bully/17
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-ALLY)
+  (or
+  (and (starting-resources == low-resources) (players-tribute any-human-neutral food < 200))
+  (or
+    (and (starting-resources == medium-resources) (players-tribute any-human-neutral food < 500))
+    (and (starting-resources == high-resources) (players-tribute any-human-neutral food < 1000))
+  )
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942009)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+)
+; EMPIRE/dip-bully/18
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-ALLY)
+  (or
+  (and (starting-resources == low-resources) (players-tribute any-human-neutral gold < 200))
+  (or
+    (and (starting-resources == medium-resources) (players-tribute any-human-neutral gold < 500))
+    (and (starting-resources == high-resources) (players-tribute any-human-neutral gold < 1000))
+  )
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942010)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+)
+; EMPIRE/dip-bully/19
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-ALLY)
+  (or
+  (and (starting-resources == low-resources) (players-tribute any-human-neutral stone < 200))
+  (or
+    (and (starting-resources == medium-resources) (players-tribute any-human-neutral stone < 500))
+    (and (starting-resources == high-resources) (players-tribute any-human-neutral stone < 1000))
+  )
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942011)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+)
+; EMPIRE/dip-bully/20
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (or
+  (and (starting-resources == low-resources) (players-tribute any-human-neutral wood >= 200))
+  (or
+    (and (starting-resources == medium-resources) (players-tribute any-human-neutral wood >= 500))
+    (and (starting-resources == high-resources) (players-tribute any-human-neutral wood >= 1000))
+  )
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942012)
+  (disable-self)
+)
+; EMPIRE/dip-bully/21
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (or
+  (and (starting-resources == low-resources) (players-tribute any-human-neutral food >= 200))
+  (or
+    (and (starting-resources == medium-resources) (players-tribute any-human-neutral food >= 500))
+    (and (starting-resources == high-resources) (players-tribute any-human-neutral food >= 1000))
+  )
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942013)
+  (disable-self)
+)
+; EMPIRE/dip-bully/22
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (or
+  (and (starting-resources == low-resources) (players-tribute any-human-neutral gold >= 200))
+  (or
+    (and (starting-resources == medium-resources) (players-tribute any-human-neutral gold >= 500))
+    (and (starting-resources == high-resources) (players-tribute any-human-neutral gold >= 1000))
+  )
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942014)
+  (disable-self)
+)
+; EMPIRE/dip-bully/23
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (or
+  (and (starting-resources == low-resources) (players-tribute any-human-neutral stone >= 200))
+  (or
+    (and (starting-resources == medium-resources) (players-tribute any-human-neutral stone >= 500))
+    (and (starting-resources == high-resources) (players-tribute any-human-neutral stone >= 1000))
+  )
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942015)
+  (disable-self)
+)
+; EMPIRE/dip-bully/24
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (starting-resources == low-resources)
+  (players-tribute any-human-neutral wood >= 200)
+  (players-tribute any-human-neutral food >= 200)
+  (players-tribute any-human-neutral gold >= 200)
+  (players-tribute any-human-neutral stone >= 200)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942016)
+  (set-stance this-any-human-neutral ally)
+  (set-goal 35 ce-NOTICE)
+  (set-goal 22 ce-NO)
+  (disable-self)
+)
+; EMPIRE/dip-bully/25
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (starting-resources == medium-resources)
+  (players-tribute any-human-neutral wood >= 500)
+  (players-tribute any-human-neutral food >= 500)
+  (players-tribute any-human-neutral gold >= 500)
+  (players-tribute any-human-neutral stone >= 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942016)
+  (set-stance this-any-human-neutral ally)
+  (set-goal 35 ce-NOTICE)
+  (set-goal 22 ce-NO)
+  (disable-self)
+)
+; EMPIRE/dip-bully/26
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (starting-resources == high-resources)
+  (players-tribute any-human-neutral wood >= 1000)
+  (players-tribute any-human-neutral food >= 1000)
+  (players-tribute any-human-neutral gold >= 1000)
+  (players-tribute any-human-neutral stone >= 1000)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942016)
+  (set-stance this-any-human-neutral ally)
+  (set-goal 35 ce-NOTICE)
+  (set-goal 22 ce-NO)
+  (disable-self)
+)
+#end-if
+#load-if-not-defined DIFFICULTY-EASIEST
+#load-if-not-defined DIFFICULTY-EASY
+; EMPIRE/dip-bully/27
+(defrule
+  (civ-selected 1)
+  (true)
+  =>
+  (set-goal ce-personality ce-NOTICE)
+  (set-goal 22 ce-NO)
+  (disable-self)
+)
+; EMPIRE/dip-bully/28
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-NOTICE)
+  (taunt-detected any-computer-ally 218)
+  =>
+  (set-goal ce-personality 12)
+  (set-stance every-human enemy)
+  (acknowledge-taunt this-any-computer-ally 218)
+  (set-stance every-computer ally)
+  (disable-self)
+)
+; EMPIRE/dip-bully/29
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-NOTICE)
+  (difficulty <= moderate)
+  (or (building-type-count ce-bldg-prefab > 0) (building-type-count ce-bldg-govtctr > 0))
+  (player-in-game any-computer-ally)
+  =>
+  (set-goal ce-personality 50)
+  (disable-self)
+)
+; EMPIRE/dip-bully/30
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  =>
+  (generate-random-number 4)
+  (set-goal 36 ce-NO)
+  (set-goal 37 ce-NO)
+  (set-goal 38 ce-NO)
+  (set-goal 39 ce-NO)
+  (disable-self)
+)
+; EMPIRE/dip-bully/31
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  (random-number == 1)
+  =>
+  (set-goal ce-personality ce-ALLY)
+  (disable-self)
+)
+; EMPIRE/dip-bully/32
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  (difficulty == moderate)
+  (or (random-number == 2) (random-number == 3))
+  =>
+  (set-goal ce-personality ce-ALLY)
+  (disable-self)
+)
+; EMPIRE/dip-bully/33
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  (difficulty < moderate)
+  (or (random-number == 2) (random-number == 3))
+  =>
+  (set-goal ce-personality ce-BULLY)
+  (disable-self)
+)
+; EMPIRE/dip-bully/34
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 50)
+  (random-number == 4)
+  =>
+  (set-goal ce-personality ce-BULLY)
+  (disable-self)
+)
+; EMPIRE/dip-bully/35
+(defrule
+  (civ-selected 1)
+  (or (goal ce-personality ce-BULLY) (goal ce-personality ce-ALLY))
+  =>
+  (chat-to-player-using-id every-computer 942400)
+  (disable-self)
+)
+; EMPIRE/dip-bully/36
+(defrule
+  (civ-selected 1)
+  (or (goal ce-personality ce-BULLY) (goal ce-personality ce-ALLY))
+  (or (goal ce-rush-control 2) (goal ce-rush-control ce-RUSHING))
+  =>
+  (set-goal ce-rush-control ce-IMPERIAL)
+)
+; EMPIRE/dip-bully/37
+(defrule
+  (civ-selected 1)
+  (stance-toward any-human enemy)
+  (or (goal ce-personality ce-BULLY) (goal ce-personality ce-ALLY))
+  =>
+  (set-stance this-any-human neutral)
+  (set-stance every-computer neutral)
+  (disable-self)
+)
+; EMPIRE/dip-bully/38
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal ce-get-mad ce-NO)
+  (current-age >= 1)
+  =>
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+  (set-goal 25 ce-NOTICE)
+  (disable-self)
+)
+; EMPIRE/dip-bully/39
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (timer-triggered ce-t-chat)
+  =>
+  (generate-random-number 4)
+)
+; EMPIRE/dip-bully/40
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (current-age == 1)
+  (timer-triggered ce-t-chat)
+  (stance-toward any-human neutral)
+  (random-number == 1)
+  =>
+  (chat-to-player-using-id this-any-human 942040)
+  (set-goal 25 ce-CARBON)
+  (clear-tribute-memory this-any-human wood)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 200)
+)
+; EMPIRE/dip-bully/41
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (current-age == 1)
+  (timer-triggered ce-t-chat)
+  (stance-toward any-human neutral)
+  (random-number == 2)
+  =>
+  (chat-to-player-using-id this-any-human 942038)
+  (set-goal 25 ce-FOOD)
+  (clear-tribute-memory this-any-human food)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 200)
+)
+; EMPIRE/dip-bully/42
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (current-age == 1)
+  (timer-triggered ce-t-chat)
+  (stance-toward any-human neutral)
+  (random-number == 3)
+  =>
+  (chat-to-player-using-id this-any-human 942037)
+  (set-goal 25 ce-NOVA)
+  (clear-tribute-memory this-any-human gold)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 200)
+)
+; EMPIRE/dip-bully/43
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (current-age == 1)
+  (timer-triggered ce-t-chat)
+  (stance-toward any-human neutral)
+  (random-number == 4)
+  =>
+  (chat-to-player-using-id this-any-human 942039)
+  (set-goal 25 ce-METAL)
+  (clear-tribute-memory this-any-human stone)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 200)
+)
+; EMPIRE/dip-bully/44
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (or (and (goal 25 ce-CARBON) (players-tribute-memory any-human-neutral wood >= 100)) (and (goal 25 ce-FOOD) (players-tribute-memory any-human-neutral food >= 100)))
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942041)
+  (set-goal 25 ce-NOTICE)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 360)
+)
+; EMPIRE/dip-bully/45
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (or (and (goal 25 ce-NOVA) (players-tribute-memory any-human-neutral gold >= 100)) (and (goal 25 ce-METAL) (players-tribute-memory any-human-neutral stone >= 100)))
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942041)
+  (set-goal 25 ce-NOTICE)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 360)
+)
+; EMPIRE/dip-bully/46
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (timer-triggered ce-t-chat)
+  (or (or (goal 25 ce-CARBON) (goal 25 ce-FOOD)) (or (goal 25 ce-NOVA) (goal 25 ce-METAL)))
+  =>
+  (set-goal ce-personality 10)
+  (disable-timer ce-t-chat)
+  (disable-self)
+)
+; EMPIRE/dip-bully/47
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (timer-triggered ce-t-chat)
+  (current-age == 2)
+  (stance-toward any-human neutral)
+  (random-number == 1)
+  =>
+  (chat-to-player-using-id this-any-human 942045)
+  (set-goal 25 ce-CASTLE-AGE-CARBON)
+  (clear-tribute-memory this-any-human wood)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 150)
+)
+; EMPIRE/dip-bully/48
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (timer-triggered ce-t-chat)
+  (current-age == 2)
+  (stance-toward any-human neutral)
+  (random-number == 2)
+  =>
+  (chat-to-player-using-id this-any-human 942043)
+  (set-goal 25 ce-CASTLE-AGE-FOOD)
+  (clear-tribute-memory this-any-human food)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 150)
+)
+; EMPIRE/dip-bully/49
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (timer-triggered ce-t-chat)
+  (current-age == 2)
+  (stance-toward any-human neutral)
+  (random-number == 3)
+  =>
+  (chat-to-player-using-id this-any-human 942042)
+  (set-goal 25 ce-CASTLE-AGE-NOVA)
+  (clear-tribute-memory this-any-human gold)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 150)
+)
+; EMPIRE/dip-bully/50
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (goal 25 ce-NOTICE)
+  (timer-triggered ce-t-chat)
+  (current-age == 2)
+  (stance-toward any-human neutral)
+  (random-number == 3)
+  =>
+  (chat-to-player-using-id this-any-human 942044)
+  (set-goal 25 ce-CASTLE-AGE-METAL)
+  (clear-tribute-memory this-any-human stone)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 150)
+)
+; EMPIRE/dip-bully/51
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (or
+  (and (goal 25 ce-CASTLE-AGE-CARBON) (players-tribute-memory any-human-neutral wood >= 200))
+  (and (goal 25 ce-CASTLE-AGE-FOOD) (players-tribute-memory any-human-neutral food >= 200))
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942046)
+  (set-goal 25 ce-NOTICE)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 360)
+)
+; EMPIRE/dip-bully/52
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (or
+  (and (goal 25 ce-CASTLE-AGE-NOVA) (players-tribute-memory any-human-neutral gold >= 200))
+  (and (goal 25 ce-CASTLE-AGE-METAL) (players-tribute-memory any-human-neutral stone >= 200))
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942046)
+  (set-goal 25 ce-NOTICE)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 360)
+)
+; EMPIRE/dip-bully/53
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (timer-triggered ce-t-chat)
+  (or (or (goal 25 ce-CASTLE-AGE-CARBON) (goal 25 ce-CASTLE-AGE-FOOD)) (or (goal 25 ce-CASTLE-AGE-NOVA) (goal 25 ce-CASTLE-AGE-METAL)))
+  =>
+  (set-goal ce-personality 10)
+  (disable-timer ce-t-chat)
+  (disable-self)
+)
+; EMPIRE/dip-bully/54
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-BULLY)
+  (current-age == 3)
+  (stance-toward any-human neutral)
+  (random-number == 1)
+  =>
+  (chat-to-player-using-id this-any-human 942047)
+  (set-goal 25 ce-IMPERIAL-AGE-CARBON)
+  (clear-tribute-memory this-any-human wood)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 150)
+)
+; EMPIRE/dip-bully/55
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-BULLY)
+  (current-age == 3)
+  (stance-toward any-human neutral)
+  (random-number == 2)
+  =>
+  (chat-to-player-using-id this-any-human 942048)
+  (set-goal 25 ce-IMPERIAL-AGE-FOOD)
+  (clear-tribute-memory this-any-human food)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 150)
+)
+; EMPIRE/dip-bully/56
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-BULLY)
+  (current-age == 3)
+  (stance-toward any-human neutral)
+  (random-number == 3)
+  =>
+  (chat-to-player-using-id this-any-human 942049)
+  (set-goal 25 ce-IMPERIAL-AGE-NOVA)
+  (clear-tribute-memory this-any-human gold)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 150)
+)
+; EMPIRE/dip-bully/57
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-BULLY)
+  (current-age == 3)
+  (stance-toward any-human neutral)
+  (random-number == 4)
+  =>
+  (chat-to-player-using-id this-any-human 942051)
+  (set-goal 25 ce-IMPERIAL-AGE-METAL)
+  (clear-tribute-memory this-any-human stone)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 150)
+)
+; EMPIRE/dip-bully/58
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (or
+  (and (goal 25 ce-IMPERIAL-AGE-CARBON) (players-tribute-memory any-human-neutral wood >= 500))
+  (and (goal 25 ce-IMPERIAL-AGE-FOOD) (players-tribute-memory any-human-neutral food >= 500))
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942052)
+  (set-goal 25 ce-NOTICE)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 360)
+)
+; EMPIRE/dip-bully/59
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (or
+  (and (goal 25 ce-IMPERIAL-AGE-NOVA) (players-tribute-memory any-human-neutral gold >= 500))
+  (and (goal 25 ce-IMPERIAL-AGE-METAL) (players-tribute-memory any-human-neutral stone >= 500))
+)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942052)
+  (set-goal 25 ce-NOTICE)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 360)
+)
+; EMPIRE/dip-bully/60
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (timer-triggered ce-t-chat)
+  (or (or (goal 25 ce-IMPERIAL-AGE-CARBON) (goal 25 ce-IMPERIAL-AGE-FOOD)) (or (goal 25 ce-IMPERIAL-AGE-NOVA) (goal 25 ce-IMPERIAL-AGE-METAL)))
+  =>
+  (set-goal ce-personality 10)
+  (disable-timer ce-t-chat)
+  (disable-self)
+)
+; EMPIRE/dip-bully/61
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (players-tribute any-human-neutral wood > 500)
+  (players-tribute any-human-neutral food > 500)
+  (players-tribute any-human-neutral gold > 500)
+  (players-tribute any-human-neutral stone > 500)
+  =>
+  (set-stance every-computer enemy)
+  (chat-to-player-using-id this-any-human-neutral 942053)
+  (set-goal ce-personality ce-NO)
+  (set-stance this-any-human-neutral ally)
+  (disable-self)
+)
+; EMPIRE/dip-bully/62
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-BULLY)
+  (or
+  (or (players-tribute any-human-neutral wood >= 1500) (players-tribute any-human-neutral food >= 1500))
+  (or (players-tribute any-human-neutral gold >= 1500) (players-tribute any-human-neutral stone >= 1500))
+)
+  =>
+  (set-stance this-any-human-neutral ally)
+  (set-stance every-computer enemy)
+  (chat-to-player-using-id this-any-human-neutral 942053)
+  (set-goal ce-personality ce-NO)
+  (disable-timer ce-t-chat)
+  (disable-self)
+)
+; EMPIRE/dip-bully/63
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (goal ce-get-mad ce-NO)
+  (stance-toward any-human neutral)
+  (current-age == 1)
+  (game-time > 600)
+  =>
+  (chat-to-player-using-id this-any-human 942055)
+  (set-goal 22 ce-YES)
+  (disable-self)
+)
+; EMPIRE/dip-bully/64
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (goal 22 ce-YES)
+  (starting-resources == low-resources)
+  =>
+  (enable-timer ce-t-chat 600)
+  (disable-self)
+)
+; EMPIRE/dip-bully/65
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (goal 22 ce-YES)
+  (starting-resources == medium-resources)
+  =>
+  (enable-timer ce-t-chat 300)
+  (disable-self)
+)
+; EMPIRE/dip-bully/66
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (goal 2 ce-YES)
+  (starting-resources == high-resources)
+  =>
+  (enable-timer ce-t-chat 150)
+  (disable-self)
+)
+; EMPIRE/dip-bully/67
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (timer-triggered ce-t-chat)
+  (players-tribute any-human-neutral wood < 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942057)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+)
+; EMPIRE/dip-bully/68
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-ALLY)
+  (players-tribute any-human-neutral food < 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942058)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+)
+; EMPIRE/dip-bully/69
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-ALLY)
+  (players-tribute any-human-neutral gold < 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942059)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+)
+; EMPIRE/dip-bully/70
+(defrule
+  (civ-selected 1)
+  (timer-triggered ce-t-chat)
+  (goal ce-personality ce-ALLY)
+  (players-tribute any-human-neutral stone < 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942060)
+  (disable-timer ce-t-chat)
+  (enable-timer ce-t-chat 300)
+  (disable-self)
+)
+; EMPIRE/dip-bully/71
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (players-tribute any-human-neutral wood >= 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942061)
+  (clear-tribute-memory this-any-human-neutral wood)
+  (set-goal 36 ce-YES)
+  (disable-self)
+)
+; EMPIRE/dip-bully/72
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (players-tribute any-human-neutral food >= 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942062)
+  (clear-tribute-memory this-any-human-neutral food)
+  (set-goal 37 ce-YES)
+  (disable-self)
+)
+; EMPIRE/dip-bully/73
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (players-tribute any-human-neutral gold >= 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942063)
+  (clear-tribute-memory this-any-human-neutral gold)
+  (disable-self)
+)
+; EMPIRE/dip-bully/74
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (players-tribute any-human-neutral stone >= 500)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942064)
+  (clear-tribute-memory this-any-human-neutral stone)
+  (set-goal 38 ce-YES)
+  (disable-self)
+)
+; EMPIRE/dip-bully/75
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (goal 36 ce-YES)
+  (players-tribute-memory any-human-neutral wood > 0)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942065)
+  (clear-tribute-memory this-any-human-neutral wood)
+  (set-goal 39 ce-YES)
+  (disable-self)
+)
+; EMPIRE/dip-bully/76
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (goal 37 ce-YES)
+  (players-tribute-memory any-human-neutral food > 0)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942066)
+  (clear-tribute-memory this-any-human-neutral food)
+)
+; EMPIRE/dip-bully/77
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (goal 38 ce-YES)
+  (players-tribute-memory any-human-neutral gold > 0)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942067)
+  (clear-tribute-memory this-any-human-neutral gold)
+)
+; EMPIRE/dip-bully/78
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (goal 39 ce-YES)
+  (players-tribute-memory any-human-neutral stone > 0)
+  =>
+  (chat-to-player-using-id this-any-human-neutral 942068)
+  (clear-tribute-memory this-any-human-neutral stone)
+)
+; EMPIRE/dip-bully/79
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (players-tribute any-human-neutral wood >= 500)
+  (players-tribute any-human-neutral food >= 500)
+  (players-tribute any-human-neutral gold >= 500)
+  (players-tribute any-human-neutral stone >= 500)
+  (stance-toward any-human neutral)
+  =>
+  (chat-to-player-using-id this-any-human 942016)
+  (chat-to-player-using-id this-any-human 942003)
+  (set-stance this-any-human ally)
+  (set-stance every-computer enemy)
+  (set-goal ce-personality ce-NO)
+  (disable-self)
+)
+; EMPIRE/dip-bully/80
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (game-time > 4800)
+  (stance-toward any-human neutral)
+  (difficulty == moderate)
+  (or (or (goal 36 ce-NO) (goal 37 ce-NO)) (or (goal 38 ce-NO) (goal 39 ce-NO)))
+  =>
+  (chat-to-player-using-id this-any-human 942069)
+)
+; EMPIRE/dip-bully/81
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (game-time > 4800)
+  (stance-toward any-human neutral)
+  (difficulty == moderate)
+  (or (or (goal 36 ce-NO) (goal 37 ce-NO)) (or (goal 38 ce-NO) (goal 39 ce-NO)))
+  =>
+  (set-stance this-any-human enemy)
+  (set-stance every-computer ally)
+  (set-goal ce-personality 10)
+)
+; EMPIRE/dip-bully/82
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (game-time > 3600)
+  (stance-toward any-human neutral)
+  (difficulty <= hard)
+  (or (or (goal 36 ce-NO) (goal 37 ce-NO)) (or (goal 38 ce-NO) (goal 39 ce-NO)))
+  =>
+  (chat-to-player-using-id this-any-human 942069)
+)
+; EMPIRE/dip-bully/83
+(defrule
+  (civ-selected 1)
+  (goal ce-personality ce-ALLY)
+  (game-time > 3600)
+  (stance-toward any-human neutral)
+  (difficulty <= hard)
+  (or (or (goal 36 ce-NO) (goal 37 ce-NO)) (or (goal 38 ce-NO) (goal 39 ce-NO)))
+  =>
+  (set-stance this-any-human enemy)
+  (set-stance every-computer ally)
+  (set-goal ce-personality 10)
+)
+#end-if
+#end-if
+#end-if

@@ -1,0 +1,1436 @@
+{
+  "Hint": "LineIDs have to be between (-400, -199). DefConst Identifiers can be strings or arrays of strings",
+  "UnitLines": [
+    {
+      "Name": "SWGB bldg-aabattery",
+      "Identifier": "swgb-bldg-aabattery",
+      "Building": true,
+      "LineID": -397,
+      "IDChain": [
+        1869,
+        3604
+      ]
+    },
+    {
+      "Name": "SWGB bldg-barrier-line",
+      "Identifier": "swgb-bldg-barrier-line",
+      "Building": true,
+      "LineID": -396,
+      "IDChain": [
+        117,
+        155,
+        195
+      ]
+    },
+    {
+      "Name": "SWGB bldg-dropanim",
+      "Identifier": "swgb-bldg-dropanim",
+      "Building": true,
+      "LineID": -395,
+      "IDChain": [
+        319,
+        320,
+        321,
+        322,
+        3550,
+        3551,
+        3552,
+        3553
+      ]
+    },
+    {
+      "Name": "SWGB bldg-dropcarbon",
+      "Identifier": "swgb-bldg-dropcarbon",
+      "Building": true,
+      "LineID": -394,
+      "IDChain": [
+        562,
+        563,
+        564,
+        565,
+        3562,
+        3563,
+        3564,
+        3565
+      ]
+    },
+    {
+      "Name": "SWGB bldg-dropchow",
+      "Identifier": "swgb-bldg-dropchow",
+      "Building": true,
+      "LineID": -393,
+      "IDChain": [
+        68,
+        129,
+        130,
+        131,
+        3546,
+        3547,
+        3548,
+        3549
+      ]
+    },
+    {
+      "Name": "SWGB bldg-dropmetal",
+      "Identifier": "swgb-bldg-dropmetal",
+      "Building": true,
+      "LineID": -392,
+      "IDChain": [
+        584,
+        585,
+        586,
+        587,
+        3566,
+        3567,
+        3568,
+        3569
+      ]
+    },
+    {
+      "Name": "SWGB bldg-dropnova",
+      "Identifier": "swgb-bldg-dropnova",
+      "Building": true,
+      "LineID": -391,
+      "IDChain": [
+        323,
+        324,
+        325,
+        326,
+        3558,
+        3559,
+        3560,
+        3561
+      ]
+    },
+    {
+      "Name": "SWGB bldg-farm",
+      "Identifier": "swgb-bldg-farm",
+      "Building": true,
+      "LineID": -390,
+      "IDChain": [
+        50
+      ]
+    },
+    {
+      "Name": "SWGB bldg-gate",
+      "Identifier": "swgb-bldg-gate",
+      "Building": true,
+      "LineID": -389,
+      "IDChain": [
+        487,
+        488
+      ]
+    },
+    {
+      "Name": "SWGB bldg-govtctr",
+      "Identifier": "swgb-bldg-govtctr",
+      "Building": true,
+      "LineID": -388,
+      "IDChain": [
+        82,
+        1630,
+        4788,
+        4789
+      ]
+    },
+    {
+      "Name": "SWGB bldg-main",
+      "Identifier": "swgb-bldg-main",
+      "Building": true,
+      "LineID": -387,
+      "IDChain": [
+        109,
+        71,
+        141,
+        142,
+        3578,
+        3579,
+        3580,
+        3581,
+        3646,
+        3647,
+        3648,
+        3649,
+        3650,
+        3651,
+        3652,
+        3653,
+        4780,
+        4781,
+        4782,
+        4783
+      ]
+    },
+    {
+      "Name": "SWGB bldg-missile-line",
+      "Identifier": "swgb-bldg-missile-line",
+      "Building": true,
+      "LineID": -386,
+      "IDChain": [
+        236,
+        196,
+        3603,
+        3602
+      ]
+    },
+    {
+      "Name": "SWGB bldg-monument",
+      "Identifier": "swgb-bldg-monument",
+      "Building": true,
+      "LineID": -385,
+      "IDChain": [
+        276
+      ]
+    },
+    {
+      "Name": "SWGB bldg-powercore",
+      "Identifier": "swgb-bldg-powercore",
+      "Building": true,
+      "LineID": -384,
+      "IDChain": [
+        12,
+        20,
+        132,
+        498,
+        3554,
+        3555,
+        3556,
+        3557
+      ]
+    },
+    {
+      "Name": "SWGB bldg-prefab",
+      "Identifier": "swgb-bldg-prefab",
+      "Building": true,
+      "LineID": -383,
+      "IDChain": [
+        70,
+        463,
+        464,
+        465,
+        3542,
+        3543,
+        3544,
+        3545,
+        4784,
+        4785,
+        4786,
+        4787
+      ]
+    },
+    {
+      "Name": "SWGB bldg-resctr",
+      "Identifier": "swgb-bldg-resctr",
+      "Building": true,
+      "LineID": -382,
+      "IDChain": [
+        209,
+        210,
+        3576,
+        3577
+      ]
+    },
+    {
+      "Name": "SWGB bldg-shldgen",
+      "Identifier": "swgb-bldg-shldgen",
+      "Building": true,
+      "LineID": -381,
+      "IDChain": [
+        335,
+        336
+      ]
+    },
+    {
+      "Name": "SWGB bldg-spaceport",
+      "Identifier": "swgb-bldg-spaceport",
+      "Building": true,
+      "LineID": -380,
+      "IDChain": [
+        84,
+        116,
+        137,
+        3570,
+        3571,
+        3572
+      ]
+    },
+    {
+      "Name": "SWGB bldg-trainair",
+      "Identifier": "swgb-bldg-trainair",
+      "Building": true,
+      "LineID": -379,
+      "IDChain": [
+        317,
+        318,
+        3342,
+        3343
+      ]
+    },
+    {
+      "Name": "SWGB bldg-trainboat",
+      "Identifier": "swgb-bldg-trainboat",
+      "Building": true,
+      "LineID": -378,
+      "IDChain": [
+        45,
+        47,
+        51,
+        133,
+        3586,
+        3587,
+        3588,
+        3589
+      ]
+    },
+    {
+      "Name": "SWGB bldg-trainheavy",
+      "Identifier": "swgb-bldg-trainheavy",
+      "Building": true,
+      "LineID": -377,
+      "IDChain": [
+        49,
+        150,
+        3596,
+        3597
+      ]
+    },
+    {
+      "Name": "SWGB bldg-trainjedi",
+      "Identifier": "swgb-bldg-trainjedi",
+      "Building": true,
+      "LineID": -376,
+      "IDChain": [
+        104,
+        30,
+        31,
+        3593,
+        3594,
+        3595
+      ]
+    },
+    {
+      "Name": "SWGB bldg-trainmech",
+      "Identifier": "swgb-bldg-trainmech",
+      "Building": true,
+      "LineID": -375,
+      "IDChain": [
+        101,
+        86,
+        153,
+        3590,
+        3591,
+        3592
+      ]
+    },
+    {
+      "Name": "SWGB bldg-traintrooper",
+      "Identifier": "swgb-bldg-traintrooper",
+      "Building": true,
+      "LineID": -374,
+      "IDChain": [
+        87,
+        10,
+        14,
+        337,
+        3582,
+        3583,
+        3584,
+        3585
+      ]
+    },
+    {
+      "Name": "SWGB bldg-turret-line",
+      "Identifier": "swgb-bldg-turret-line",
+      "Building": true,
+      "LineID": -373,
+      "IDChain": [
+        79,
+        234,
+        235,
+        3599,
+        3600,
+        3601,
+        7088
+      ]
+    },
+    {
+      "Name": "SWGB bldg-warctr",
+      "Identifier": "swgb-bldg-warctr",
+      "Building": true,
+      "LineID": -372,
+      "IDChain": [
+        103,
+        18,
+        105,
+        3573,
+        3574,
+        3575
+      ]
+    },
+    {
+      "Name": "SWGB boat-artillery-line",
+      "Identifier": "swgb-boat-artillery-line",
+      "Building": false,
+      "LineID": -371,
+      "IDChain": [
+        815
+      ]
+    },
+    {
+      "Name": "SWGB boat-cutlaser-line",
+      "Identifier": "swgb-boat-cutlaser-line",
+      "Building": false,
+      "LineID": -370,
+      "IDChain": [
+        898,
+        1605
+      ]
+    },
+    {
+      "Name": "SWGB boat-laser-line",
+      "Identifier": "swgb-boat-laser-line",
+      "Building": false,
+      "LineID": -369,
+      "IDChain": [
+        868,
+        878,
+        888
+      ]
+    },
+    {
+      "Name": "SWGB boat-missile-line",
+      "Identifier": "swgb-boat-missile-line",
+      "Building": false,
+      "LineID": -368,
+      "IDChain": [
+        1615,
+        1626
+      ]
+    },
+    {
+      "Name": "SWGB boat-monitor-line",
+      "Identifier": "swgb-boat-monitor-line",
+      "Building": false,
+      "LineID": -367,
+      "IDChain": [
+        1803,
+        1813
+      ]
+    },
+    {
+      "Name": "SWGB gaia-animal-herd-line",
+      "Identifier": "swgb-gaia-animal-herd-line",
+      "Building": false,
+      "LineID": -366,
+      "IDChain": [
+        594,
+        833,
+        4286,
+        4288,
+        4290,
+        4292,
+        4296,
+        4300,
+        4304,
+        4421,
+        7416,
+        7418,
+        7420,
+        7422,
+        7597,
+        7534,
+        7585,
+        7587,
+        7589,
+        7591,
+        7593,
+        7595,
+        7685,
+        7805
+      ]
+    },
+    {
+      "Name": "SWGB gaia-animal-hunt-line",
+      "Identifier": "swgb-gaia-animal-hunt-line",
+      "Building": false,
+      "LineID": -365,
+      "IDChain": [
+        48,
+        1203,
+        1363,
+        1365,
+        1366,
+        1367,
+        1471,
+        1473,
+        1475,
+        4294,
+        4298,
+        4306,
+        4310,
+        4336,
+        4724,
+        4726,
+        6232,
+        6334,
+        6838,
+        7397,
+        7403,
+        7412,
+        7426,
+        7428,
+        7455,
+        7466,
+        7468,
+        7470,
+        7473,
+        7478,
+        7480,
+        7500,
+        7504,
+        7526,
+        7530,
+        7532,
+        7620,
+        7655,
+        7741,
+        7809
+      ]
+    },
+    {
+      "Name": "SWGB gaia-animal-lure-line",
+      "Identifier": "swgb-gaia-animal-lure-line",
+      "Building": false,
+      "LineID": -364,
+      "IDChain": [
+        822,
+        1249,
+        1364,
+        1469,
+        4303,
+        4344,
+        4423,
+        4492,
+        4494,
+        7393,
+        7395,
+        7399,
+        7401,
+        7410,
+        7414,
+        7431,
+        7433,
+        7435,
+        7437,
+        7441,
+        7453,
+        7476,
+        7496,
+        7502,
+        7506,
+        7508,
+        7512,
+        7518,
+        7522,
+        7528,
+        7606,
+        7608,
+        7625,
+        7635,
+        7659,
+        7661,
+        7673,
+        7676,
+        7738,
+        7752,
+        7754,
+        7813,
+        7815
+      ]
+    },
+    {
+      "Name": "SWGB gaia-berry-line",
+      "Identifier": "swgb-gaia-berry-line",
+      "Building": false,
+      "LineID": -363,
+      "IDChain": [
+        59,
+        1118,
+        1119,
+        2075,
+        2076,
+        4837,
+        4838,
+        615,
+        7939,
+        7959
+      ]
+    },
+    {
+      "Name": "SWGB gaia-carbon-line",
+      "Identifier": "swgb-gaia-carbon-line",
+      "Building": false,
+      "LineID": -362,
+      "IDChain": [
+        217,
+        1117,
+        1160,
+        1161,
+        1341,
+        2089,
+        2090,
+        2092,
+        2093,
+        2772,
+        2775,
+        2777,
+        3236,
+        3237,
+        4115,
+        4273,
+        6345,
+        4957
+      ]
+    },
+    {
+      "Name": "SWGB gaia-fish-line",
+      "Identifier": "swgb-gaia-fish-line",
+      "Building": false,
+      "LineID": -361,
+      "IDChain": [
+        69,
+        450,
+        451,
+        455,
+        456,
+        457,
+        458,
+        53,
+        2251,
+        2252,
+        2253,
+        2254,
+        2255,
+        2256,
+        2257,
+        2258,
+        6482,
+        7091
+      ]
+    },
+    {
+      "Name": "SWGB gaia-nova-line",
+      "Identifier": "swgb-gaia-nova-line",
+      "Building": false,
+      "LineID": -360,
+      "IDChain": [
+        66,
+        1375,
+        4274,
+        4681
+      ]
+    },
+    {
+      "Name": "SWGB gaia-ore-line",
+      "Identifier": "swgb-gaia-ore-line",
+      "Building": false,
+      "LineID": -359,
+      "IDChain": [
+        102,
+        1159,
+        2473,
+        4120,
+        4275
+      ]
+    },
+    {
+      "Name": "SWGB gaia-tree-line",
+      "Identifier": "swgb-gaia-tree-line",
+      "Building": false,
+      "LineID": -358,
+      "IDChain": [
+        26,
+        348,
+        414,
+        349,
+        411,
+        351,
+        350,
+        413,
+        1152,
+        1158,
+        1277,
+        1279,
+        1280,
+        1906,
+        1926,
+        1927,
+        2161,
+        2162,
+        2163,
+        2164,
+        2165,
+        2166,
+        2167,
+        2610,
+        3134,
+        3445,
+        3446,
+        3923,
+        4156,
+        4157,
+        4186,
+        4564,
+        4836,
+        4839,
+        4840,
+        4841,
+        4936,
+        4962,
+        5224,
+        5225,
+        5226,
+        5227,
+        5228
+      ]
+    },
+    {
+      "Name": "SWGB siege-artillery-line",
+      "Identifier": "swgb-siege-artillery-line",
+      "Building": false,
+      "LineID": -357,
+      "IDChain": [
+        691,
+        631
+      ]
+    },
+    {
+      "Name": "SWGB siege-cannon-line",
+      "Identifier": "swgb-siege-cannon-line",
+      "Building": false,
+      "LineID": -356,
+      "IDChain": [
+        1648
+      ]
+    },
+    {
+      "Name": "SWGB siege-missile-line",
+      "Identifier": "swgb-siege-missile-line",
+      "Building": false,
+      "LineID": -355,
+      "IDChain": [
+        702,
+        651
+      ]
+    },
+    {
+      "Name": "SWGB siege-ram-line",
+      "Identifier": "swgb-siege-ram-line",
+      "Building": false,
+      "LineID": -354,
+      "IDChain": [
+        713,
+        681
+      ]
+    },
+    {
+      "Name": "SWGB sub-artillery-line",
+      "Identifier": "swgb-sub-artillery-line",
+      "Building": false,
+      "LineID": -351,
+      "IDChain": [
+        818,
+        805
+      ]
+    },
+    {
+      "Name": "SWGB unit-air-cruiser",
+      "Identifier": "swgb-unit-air-cruiser",
+      "Building": false,
+      "LineID": -350,
+      "IDChain": [
+        625
+      ]
+    },
+    {
+      "Name": "SWGB unit-airspeeder-line",
+      "Identifier": "swgb-unit-airspeeder-line",
+      "Building": false,
+      "LineID": -349,
+      "IDChain": [
+        6,
+        1675
+      ]
+    },
+    {
+      "Name": "SWGB unit-airtrans-line",
+      "Identifier": "swgb-unit-airtrans-line",
+      "Building": false,
+      "LineID": -348,
+      "IDChain": [
+        1036
+      ]
+    },
+    {
+      "Name": "SWGB unit-attacker-line",
+      "Identifier": "swgb-unit-attacker-line",
+      "Building": false,
+      "LineID": -347,
+      "IDChain": [
+        2524
+      ]
+    },
+    {
+      "Name": "SWGB unit-berserk-line",
+      "Identifier": "swgb-unit-berserk-line",
+      "Building": false,
+      "LineID": -346,
+      "IDChain": [
+        8,
+        1677
+      ]
+    },
+    {
+      "Name": "SWGB unit-bomber-line",
+      "Identifier": "swgb-unit-bomber-line",
+      "Building": false,
+      "LineID": -345,
+      "IDChain": [
+        762,
+        783,
+        733
+      ]
+    },
+    {
+      "Name": "SWGB unit-bounty",
+      "Identifier": "swgb-unit-bounty",
+      "Building": false,
+      "LineID": -344,
+      "IDChain": [
+        1657
+      ]
+    },
+    {
+      "Name": "SWGB unit-cargo-air-line",
+      "Identifier": "swgb-unit-cargo-air-line",
+      "Building": false,
+      "LineID": -343,
+      "IDChain": [
+        4069
+      ]
+    },
+    {
+      "Name": "SWGB unit-cargo-ground-line",
+      "Identifier": "swgb-unit-cargo-ground-line",
+      "Building": false,
+      "LineID": -342,
+      "IDChain": [
+        1628
+      ]
+    },
+    {
+      "Name": "SWGB unit-darktrp-line",
+      "Identifier": "swgb-unit-darktrp-line",
+      "Building": false,
+      "LineID": -341,
+      "IDChain": [
+        1689,
+        1667,
+        4901
+      ]
+    },
+    {
+      "Name": "SWGB unit-defiler-line",
+      "Identifier": "swgb-unit-defiler-line",
+      "Building": false,
+      "LineID": -340,
+      "IDChain": [
+        2546,
+        2544
+      ]
+    },
+    {
+      "Name": "SWGB unit-destdroid-line",
+      "Identifier": "swgb-unit-destdroid-line",
+      "Building": false,
+      "LineID": -339,
+      "IDChain": [
+        7266,
+        172
+      ]
+    },
+    {
+      "Name": "SWGB unit-fastbike-line",
+      "Identifier": "swgb-unit-fastbike-line",
+      "Building": false,
+      "LineID": -338,
+      "IDChain": [
+        550
+      ]
+    },
+    {
+      "Name": "SWGB unit-fighter-line",
+      "Identifier": "swgb-unit-fighter-line",
+      "Building": false,
+      "LineID": -337,
+      "IDChain": [
+        773,
+        793,
+        752
+      ]
+    },
+    {
+      "Name": "SWGB unit-geoflyr-line",
+      "Identifier": "swgb-unit-geoflyr-line",
+      "Building": false,
+      "LineID": -336,
+      "IDChain": [
+        642,
+        640
+      ]
+    },
+    {
+      "Name": "SWGB unit-gladiatordroid1-line",
+      "Identifier": "swgb-unit-gladiatordroid1-line",
+      "Building": false,
+      "LineID": -335,
+      "IDChain": [
+        5438,
+        5442
+      ]
+    },
+    {
+      "Name": "SWGB unit-gladiatordroid2-line",
+      "Identifier": "swgb-unit-gladiatordroid2-line",
+      "Building": false,
+      "LineID": -334,
+      "IDChain": [
+        5440,
+        5444
+      ]
+    },
+    {
+      "Name": "SWGB unit-grenade-line",
+      "Identifier": "swgb-unit-grenade-line",
+      "Building": false,
+      "LineID": -333,
+      "IDChain": [
+        381
+      ]
+    },
+    {
+      "Name": "SWGB unit-interceptor-line",
+      "Identifier": "swgb-unit-interceptor-line",
+      "Building": false,
+      "LineID": -332,
+      "IDChain": [
+        2504
+      ]
+    },
+    {
+      "Name": "SWGB unit-jedi-line",
+      "Identifier": "swgb-unit-jedi-line",
+      "Building": false,
+      "LineID": -331,
+      "IDChain": [
+        180,
+        44
+      ]
+    },
+    {
+      "Name": "SWGB unit-jedifgt-line",
+      "Identifier": "swgb-unit-jedifgt-line",
+      "Building": false,
+      "LineID": -330,
+      "IDChain": [
+        641,
+        638
+      ]
+    },
+    {
+      "Name": "SWGB unit-jediholo-line",
+      "Identifier": "swgb-unit-jediholo-line",
+      "Building": false,
+      "LineID": -329,
+      "IDChain": [
+        114,
+        33,
+        1566,
+        1564,
+        111,
+        107,
+        100,
+        98,
+        15,
+        157,
+        178,
+        648,
+        151,
+        152,
+        154,
+        649,
+        40,
+        42,
+        22,
+        41,
+        1563,
+        39,
+        1565,
+        36,
+        2548,
+        2550,
+        2552,
+        4063,
+        4065,
+        4067,
+        4628,
+        4631,
+        4634,
+        4637,
+        4771,
+        4772,
+        4775,
+        5456,
+        5459,
+        5462,
+        5465,
+        5468,
+        5471,
+        5474,
+        5477,
+        5480,
+        5304,
+        5307,
+        4171
+      ]
+    },
+    {
+      "Name": "SWGB unit-jettrooper-line",
+      "Identifier": "swgb-unit-jettrooper-line",
+      "Building": false,
+      "LineID": -328,
+      "IDChain": [
+        4678,
+        4680
+      ]
+    },
+    {
+      "Name": "SWGB unit-knight-line",
+      "Identifier": "swgb-unit-knight-line",
+      "Building": false,
+      "LineID": -327,
+      "IDChain": [
+        4,
+        1673
+      ]
+    },
+    {
+      "Name": "SWGB unit-laser-line",
+      "Identifier": "swgb-unit-laser-line",
+      "Building": false,
+      "LineID": -326,
+      "IDChain": [
+        307,
+        448,
+        412,
+        426
+      ]
+    },
+    {
+      "Name": "SWGB unit-magnaguard-line",
+      "Identifier": "swgb-unit-magnaguard-line",
+      "Building": false,
+      "LineID": -325,
+      "IDChain": [
+        2277,
+        4085
+      ]
+    },
+    {
+      "Name": "SWGB unit-master-line",
+      "Identifier": "swgb-unit-master-line",
+      "Building": false,
+      "LineID": -324,
+      "IDChain": [
+        115
+      ]
+    },
+    {
+      "Name": "SWGB unit-mech1-line",
+      "Identifier": "swgb-unit-mech1-line",
+      "Building": false,
+      "LineID": -323,
+      "IDChain": [
+        469,
+        560
+      ]
+    },
+    {
+      "Name": "SWGB unit-mech2-line",
+      "Identifier": "swgb-unit-mech2-line",
+      "Building": false,
+      "LineID": -322,
+      "IDChain": [
+        485,
+        574
+      ]
+    },
+    {
+      "Name": "SWGB unit-mech3-line",
+      "Identifier": "swgb-unit-mech3-line",
+      "Building": false,
+      "LineID": -321,
+      "IDChain": [
+        500,
+        603
+      ]
+    },
+    {
+      "Name": "SWGB unit-missile-line",
+      "Identifier": "swgb-unit-missile-line",
+      "Building": false,
+      "LineID": -320,
+      "IDChain": [
+        438,
+        401
+      ]
+    },
+    {
+      "Name": "SWGB unit-mounted-line",
+      "Identifier": "swgb-unit-mounted-line",
+      "Building": false,
+      "LineID": -319,
+      "IDChain": [
+        359,
+        391
+      ]
+    },
+    {
+      "Name": "SWGB unit-shadowtrooper-line",
+      "Identifier": "swgb-unit-shadowtrooper-line",
+      "Building": false,
+      "LineID": -318,
+      "IDChain": [
+        5305,
+        5308
+      ]
+    },
+    {
+      "Name": "SWGB unit-shield-line",
+      "Identifier": "swgb-unit-shield-line",
+      "Building": false,
+      "LineID": -317,
+      "IDChain": [
+        2,
+        1671
+      ]
+    },
+    {
+      "Name": "SWGB unit-skispeeder-line",
+      "Identifier": "swgb-unit-skispeeder-line",
+      "Building": false,
+      "LineID": -316,
+      "IDChain": [
+        4575,
+        4776
+      ]
+    },
+    {
+      "Name": "SWGB unit-transport-mech-line",
+      "Identifier": "swgb-unit-transport-mech-line",
+      "Building": false,
+      "LineID": -315,
+      "IDChain": [
+        1949
+      ]
+    },
+    {
+      "Name": "SWGB unit-vwing-line",
+      "Identifier": "swgb-unit-vwing-line",
+      "Building": false,
+      "LineID": -314,
+      "IDChain": [
+        2766,
+        5157
+      ]
+    },
+    {
+      "Name": "SWGB uu-atatswimmer-line",
+      "Identifier": "swgb-uu-atatswimmer-line",
+      "Building": false,
+      "LineID": -312,
+      "IDChain": [
+        1914
+      ]
+    },
+    {
+      "Name": "SWGB uu-jedialt-line",
+      "Identifier": "swgb-uu-jedialt-line",
+      "Building": false,
+      "LineID": -311,
+      "IDChain": [
+        4172
+      ]
+    },
+    {
+      "Name": "SWGB boat-artillery-line (Rebels)",
+      "Identifier": "swgb-rebel-boat-artillery-line",
+      "Building": false,
+      "LineID": -399,
+      "IDChain": [
+        823
+      ]
+    },
+    {
+      "Name": "SWGB boat-cutlaser-line (Rebels)",
+      "Identifier": "swgb-rebel-boat-cutlaser-line",
+      "Building": false,
+      "LineID": -398,
+      "IDChain": [
+        1603,
+        1613
+      ]
+    },
+    {
+      "Name": "SWGB boat-laser-line (Rebels)",
+      "Identifier": "swgb-rebel-boat-laser-line",
+      "Building": false,
+      "LineID": -353,
+      "IDChain": [
+        872,
+        882
+      ]
+    },
+    {
+      "Name": "SWGB boat-missile-line (Rebels)",
+      "Identifier": "swgb-rebel-boat-missile-line",
+      "Building": false,
+      "LineID": -352,
+      "IDChain": [
+        1622,
+        831
+      ]
+    },
+    {
+      "Name": "SWGB boat-monitor-line (Rebels)",
+      "Identifier": "swgb-rebel-boat-monitor-line",
+      "Building": false,
+      "LineID": -313,
+      "IDChain": [
+        1806
+      ]
+    },
+    {
+      "Name": "SWGB siege-artillery-line (Rebels)",
+      "Identifier": "swgb-rebel-siege-artillery-line",
+      "Building": false,
+      "LineID": -310,
+      "IDChain": [
+        698
+      ]
+    },
+    {
+      "Name": "SWGB siege-cannon-line (Rebels)",
+      "Identifier": "swgb-rebel-siege-cannon-line",
+      "Building": false,
+      "LineID": -309,
+      "IDChain": [
+        1651
+      ]
+    },
+    {
+      "Name": "SWGB siege-missile-line (Rebels)",
+      "Identifier": "swgb-rebel-siege-missile-line",
+      "Building": false,
+      "LineID": -308,
+      "IDChain": [
+        708,
+        675
+      ]
+    },
+    {
+      "Name": "SWGB siege-ram-line (Rebels)",
+      "Identifier": "swgb-rebel-siege-ram-line",
+      "Building": false,
+      "LineID": -307,
+      "IDChain": [
+        719
+      ]
+    },
+    {
+      "Name": "SWGB unit-air-cruiser (Rebels)",
+      "Identifier": "swgb-rebel-unit-air-cruiser",
+      "Building": false,
+      "LineID": -306,
+      "IDChain": [
+        634
+      ]
+    },
+    {
+      "Name": "SWGB unit-airtrans-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-airtrans-line",
+      "Building": false,
+      "LineID": -305,
+      "IDChain": [
+        1046
+      ]
+    },
+    {
+      "Name": "SWGB unit-attacker-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-attacker-line",
+      "Building": false,
+      "LineID": -304,
+      "IDChain": [
+        2526
+      ]
+    },
+    {
+      "Name": "SWGB unit-bomber-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-bomber-line",
+      "Building": false,
+      "LineID": -303,
+      "IDChain": [
+        769,
+        789,
+        748
+      ]
+    },
+    {
+      "Name": "SWGB unit-bounty (Rebels)",
+      "Identifier": "swgb-rebel-unit-bounty",
+      "Building": false,
+      "LineID": -302,
+      "IDChain": [
+        1663
+      ]
+    },
+    {
+      "Name": "SWGB unit-fastbike-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-fastbike-line",
+      "Building": false,
+      "LineID": -301,
+      "IDChain": [
+        556
+      ]
+    },
+    {
+      "Name": "SWGB unit-fighter-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-fighter-line",
+      "Building": false,
+      "LineID": -300,
+      "IDChain": [
+        779,
+        799,
+        758
+      ]
+    },
+    {
+      "Name": "SWGB unit-grenade-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-grenade-line",
+      "Building": false,
+      "LineID": -299,
+      "IDChain": [
+        387
+      ]
+    },
+    {
+      "Name": "SWGB unit-interceptor-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-interceptor-line",
+      "Building": false,
+      "LineID": -298,
+      "IDChain": [
+        2506
+      ]
+    },
+    {
+      "Name": "SWGB unit-jedi-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-jedi-line",
+      "Building": false,
+      "LineID": -297,
+      "IDChain": [
+        232,
+        74
+      ]
+    },
+    {
+      "Name": "SWGB unit-laser-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-laser-line",
+      "Building": false,
+      "LineID": -296,
+      "IDChain": [
+        282,
+        460,
+        422,
+        432
+      ]
+    },
+    {
+      "Name": "SWGB unit-master-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-master-line",
+      "Building": false,
+      "LineID": -295,
+      "IDChain": [
+        136
+      ]
+    },
+    {
+      "Name": "SWGB unit-mech1-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-mech1-line",
+      "Building": false,
+      "LineID": -294,
+      "IDChain": [
+        475
+      ]
+    },
+    {
+      "Name": "SWGB unit-mech2-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-mech2-line",
+      "Building": false,
+      "LineID": -293,
+      "IDChain": [
+        495,
+        588
+      ]
+    },
+    {
+      "Name": "SWGB unit-mech3-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-mech3-line",
+      "Building": false,
+      "LineID": -292,
+      "IDChain": [
+        514,
+        626
+      ]
+    },
+    {
+      "Name": "SWGB unit-missile-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-missile-line",
+      "Building": false,
+      "LineID": -291,
+      "IDChain": [
+        444,
+        407
+      ]
+    },
+    {
+      "Name": "SWGB unit-mounted-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-mounted-line",
+      "Building": false,
+      "LineID": -290,
+      "IDChain": [
+        376,
+        397,
+        346
+      ]
+    },
+    {
+      "Name": "SWGB unit-transport-mech-line (Rebels)",
+      "Identifier": "swgb-rebel-unit-transport-mech-line",
+      "Building": false,
+      "LineID": -289,
+      "IDChain": [
+        5035
+      ]
+    }
+  ]
+}

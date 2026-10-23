@@ -1,0 +1,8 @@
+# Installer payload: byte-exact (recipe.tsv pins every file by SHA-256).
+payload/** -text
+# Installer sources are packaged as checked out; pin their line endings so a
+# CI checkout produces the same bytes as a local one.
+outputs/installer/**/*.cmd text eol=crlf
+outputs/installer/**/*.ps1 text eol=crlf
+outputs/installer/**/*.cs text eol=crlf
+outputs/installer/installer/recipe.tsv -text

@@ -1,0 +1,29 @@
+(defconst SWGB_CLASSIC_DIP_BOOMER 1)
+; EMPIRE/dip-boomer/1
+(defrule
+  (civ-selected 1)
+  (game-time > 10)
+  =>
+  (set-goal ce-personality 2)
+  (disable-self)
+)
+; EMPIRE/dip-boomer/2
+(defrule
+  (civ-selected 1)
+  (goal ce-personality 2)
+  (current-age < 3)
+  (not (goal ce-rush-control ce-BOOMING))
+  =>
+  (set-goal ce-rush-control ce-BOOMING)
+  (disable-self)
+)
+; EMPIRE/dip-boomer/3
+(defrule
+  (civ-selected 1)
+  (current-age >= 2)
+  (or (goal ce-halt-worker ce-NO) (unit-type-count ce-unit-worker-count-line < ce-twenty-percent-pop))
+  (civilian-population < ce-fifty-percent-pop)
+  (can-train ce-unit-worker)
+  =>
+  (train ce-unit-worker)
+)

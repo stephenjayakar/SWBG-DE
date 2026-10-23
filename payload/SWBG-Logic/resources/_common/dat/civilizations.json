@@ -1,0 +1,66 @@
+{
+  "civilization_list": [
+    {
+      "internal_name": "Gaia",
+      "tech_tree_name": "GAIA",
+      "data_name": "GAIA",
+      "hud_style": "CivWest",
+      "name_string_id": 10102,
+      "era": "base"
+    },
+    {
+      "internal_name": "GalacticEmpire",
+      "tech_tree_name": "BRITONS",
+      "data_name": "BRITON-CIV",
+      "hud_style": "CivWest",
+      "tech_tree_image_path": "/resources/civ_techtree/menu_techtree_galacticempire.png",
+      "emblem_image_path": "/resources/civ_emblems/galacticempire.png",
+      "unique_unit_image_paths": [
+        "/resources/uniticons/swgb_galacticempire_unique.png"
+      ],
+      "name_string_id": 890001,
+      "tech_tree_description_string_id": 890011,
+      "computer_name_string_table_offset": 4400,
+      "unique_tech_id_1": -1,
+      "unique_tech_id_2": -1,
+      "unique_unit_line": -341,
+      "unique_unit_upgrade_id": 472,
+      "unique_unit_id": 1689,
+      "elite_unique_unit_id": 1667,
+      "unique_unit_string_ids": [
+        {
+          "name": 2000993,
+          "description": 2100993
+        }
+      ],
+      "era": "base"
+    },
+    {
+      "internal_name": "RebelAlliance",
+      "tech_tree_name": "FRANKS",
+      "data_name": "FRANKISH-CIV",
+      "hud_style": "CivWest",
+      "tech_tree_image_path": "/resources/civ_techtree/menu_techtree_rebelalliance.png",
+      "emblem_image_path": "/resources/civ_emblems/rebelalliance.png",
+      "unique_unit_image_paths": [
+        "/resources/uniticons/swgb_rebelalliance_unique.png"
+      ],
+      "name_string_id": 890002,
+      "tech_tree_description_string_id": 890012,
+      "computer_name_string_table_offset": 4500,
+      "unique_tech_id_1": -1,
+      "unique_tech_id_2": -1,
+      "unique_unit_line": -349,
+      "unique_unit_upgrade_id": 476,
+      "unique_unit_id": 6,
+      "elite_unique_unit_id": 1675,
+      "unique_unit_string_ids": [
+        {
+          "name": 3000006,
+          "description": 3100006
+        }
+      ],
+      "era": "base"
+    }
+  ]
+}

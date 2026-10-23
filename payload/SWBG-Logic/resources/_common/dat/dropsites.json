@@ -1,0 +1,2480 @@
+{
+  "drop_site_list": [
+    {
+      "name": "Command Center",
+      "building_id": 71,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 109,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 141,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 142,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 484,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 597,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 617,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 621,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3578,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3579,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3580,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3581,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3646,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3647,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3648,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3649,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3650,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3651,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3652,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 3653,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 4682,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 4683,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 4780,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 4781,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 4782,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Command Center",
+      "building_id": 4783,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Food Processing Center",
+      "building_id": 68,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15,
+          "allow_resource_distance_update": false
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        }
+      ]
+    },
+    {
+      "name": "Carbon Processing Center",
+      "building_id": 562,
+      "worker_object_group": 4,
+      "target_list": [
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 1
+        }
+      ]
+    },
+    {
+      "name": "Ore Processing Center",
+      "building_id": 584,
+      "worker_object_group": 4,
+      "target_list": [
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 2
+        }
+      ]
+    },
+    {
+      "name": "Nova Crystal Processing Center",
+      "building_id": 323,
+      "worker_object_group": 4,
+      "target_list": [
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Farm",
+      "building_id": 50,
+      "worker_object_group": 4,
+      "target_list": [
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "attribute_type": 16,
+          "allow_resource_distance_update": false
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        }
+      ]
+    },
+    {
+      "name": "Shipyard",
+      "building_id": 45,
+      "worker_object_group": 21,
+      "target_list": [
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Oysters",
+          "object_group": 63,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Harbor",
+      "building_id": 7085,
+      "worker_object_group": 21,
+      "target_list": [
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Oysters",
+          "object_group": 63,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Harbor",
+      "building_id": 7086,
+      "worker_object_group": 21,
+      "target_list": [
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Oysters",
+          "object_group": 63,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Harbor",
+      "building_id": 7353,
+      "worker_object_group": 21,
+      "target_list": [
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Oysters",
+          "object_group": 63,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Harbor worker drop-off",
+      "building_id": 7085,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Harbor worker drop-off",
+      "building_id": 7086,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    },
+    {
+      "name": "Harbor worker drop-off",
+      "building_id": 7353,
+      "worker_object_group": 4,
+      "accepts_livestock": true,
+      "target_list": [
+        {
+          "name": "Hunted Animals",
+          "object_group": 9,
+          "object_state": 5,
+          "object_state_forced_return_state": 2,
+          "attribute_type": 15
+        },
+        {
+          "name": "Hunting Animals",
+          "object_group": 10,
+          "object_state": 5,
+          "attribute_type": 15
+        },
+        {
+          "name": "Sheep",
+          "object_group": 58,
+          "object_state": 5,
+          "attribute_type": 0
+        },
+        {
+          "name": "Forage",
+          "object_group": 7,
+          "attribute_type": 16
+        },
+        {
+          "name": "Farms",
+          "object_group": 49,
+          "worker_num": 0,
+          "attribute_type": 16
+        },
+        {
+          "name": "Shore Fish",
+          "object_group": 33,
+          "attribute_type": 17
+        },
+        {
+          "name": "Fish",
+          "object_group": 5,
+          "attribute_type": 17
+        },
+        {
+          "name": "Trees",
+          "object_group": 15,
+          "attribute_type": 1
+        },
+        {
+          "name": "Stone Mines",
+          "object_group": 8,
+          "attribute_type": 2
+        },
+        {
+          "name": "Gold Mines",
+          "object_group": 32,
+          "attribute_type": 3
+        }
+      ],
+      "update_ai_resource_types": [
+        {
+          "resource_type": 0
+        },
+        {
+          "resource_type": 1
+        },
+        {
+          "resource_type": 2
+        },
+        {
+          "resource_type": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.15)
+project(portdat LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+file(GLOB_RECURSE DAT_SRC ../tapsa-genieutils/src/dat/*.cpp)
+add_executable(portdat main.cpp raw_compressor.cpp ../tapsa-genieutils/src/file/ISerializable.cpp ../tapsa-genieutils/src/file/IFile.cpp ${DAT_SRC})
+target_include_directories(portdat PRIVATE ../tapsa-genieutils/include)
+target_compile_definitions(portdat PRIVATE _CRT_SECURE_NO_WARNINGS)

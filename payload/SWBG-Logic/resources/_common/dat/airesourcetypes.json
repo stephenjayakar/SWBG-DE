@@ -1,0 +1,832 @@
+{
+  "ResourceTypes": [
+    {
+      "Resource": "Food",
+      "Types": [
+        {
+          "Name": "ANIMAL-BIGHUNTA",
+          "ID": 48
+        },
+        {
+          "Name": "BLDG-GARDEN",
+          "ID": 50
+        },
+        {
+          "Name": "OBJ-VEGETABLE",
+          "ID": 59
+        },
+        {
+          "Name": "ANIMAL-CAPTUREA1",
+          "ID": 594
+        },
+        {
+          "Name": "OBJ-FOODCRT",
+          "ID": 615
+        },
+        {
+          "Name": "ANIMAL-BIGHUNTB",
+          "ID": 822
+        },
+        {
+          "Name": "ANIMAL-CAPTUREB1",
+          "ID": 833
+        },
+        {
+          "Name": "OBJ-VEGETABLEB",
+          "ID": 1118
+        },
+        {
+          "Name": "OBJ-VEGETABLEC",
+          "ID": 1119
+        },
+        {
+          "Name": "ANIMAL-BIGHUNTC",
+          "ID": 1203
+        },
+        {
+          "Name": "ANIMAL-BIGHUNTD",
+          "ID": 1249
+        },
+        {
+          "Name": "ANIMAL-DOMESTICA",
+          "ID": 1363
+        },
+        {
+          "Name": "ANIMAL-DOMESTICB",
+          "ID": 1364
+        },
+        {
+          "Name": "ANIMAL-DOMESTICC",
+          "ID": 1365
+        },
+        {
+          "Name": "ANIMAL-DOMESTICD",
+          "ID": 1366
+        },
+        {
+          "Name": "ANIMAL-DOMESTICE",
+          "ID": 1367
+        },
+        {
+          "Name": "ANIMAL-MASSIF",
+          "ID": 1469
+        },
+        {
+          "Name": "ANIMAL-ORRAY",
+          "ID": 1471
+        },
+        {
+          "Name": "ANIMAL-SHAAK",
+          "ID": 1473
+        },
+        {
+          "Name": "ANIMAL-WOMPRAT",
+          "ID": 1475
+        },
+        {
+          "Name": "OBJ-JOGANFRUIT",
+          "ID": 2075
+        },
+        {
+          "Name": "OBJ-PALLIEFRUIT",
+          "ID": 2076
+        },
+        {
+          "Name": "ANIMAL-KAHYYYKBANTHA",
+          "ID": 4286
+        },
+        {
+          "Name": "ANIMAL-CAPTURED1",
+          "ID": 4288
+        },
+        {
+          "Name": "ANIMAL-CAPTUREE1",
+          "ID": 4290
+        },
+        {
+          "Name": "ANIMAL-CARIONSPAT",
+          "ID": 4292
+        },
+        {
+          "Name": "ANIMAL-CHUBA",
+          "ID": 4294
+        },
+        {
+          "Name": "ANIMAL-CURLNOSE",
+          "ID": 4296
+        },
+        {
+          "Name": "ANIMAL-FELUCIASLUG",
+          "ID": 4298
+        },
+        {
+          "Name": "ANIMAL-CAPTUREH1",
+          "ID": 4300
+        },
+        {
+          "Name": "ANIMAL-LAVAFLEA",
+          "ID": 4303
+        },
+        {
+          "Name": "ANIMAL-PORG",
+          "ID": 4304
+        },
+        {
+          "Name": "ANIMAL-VULPTEX",
+          "ID": 4306
+        },
+        {
+          "Name": "ANIMAL-FELUCIASNAIL",
+          "ID": 4310
+        },
+        {
+          "Name": "ANIMAL-GELAGRUB",
+          "ID": 4336
+        },
+        {
+          "Name": "ANIMAL-BOLOT",
+          "ID": 4344
+        },
+        {
+          "Name": "ANIMAL-CAPTUREJ1",
+          "ID": 4421
+        },
+        {
+          "Name": "ANIMAL-FLIT",
+          "ID": 4423
+        },
+        {
+          "Name": "ANIMAL-ARICTEX",
+          "ID": 4492
+        },
+        {
+          "Name": "ANIMAL-WILDBLURRG",
+          "ID": 4494
+        },
+        {
+          "Name": "ANIMAL-DOMESTICC",
+          "ID": 4724
+        },
+        {
+          "Name": "ANIMAL-DOMESTICC",
+          "ID": 4726
+        },
+        {
+          "Name": "OBJ-FARRBERRYFRUIT",
+          "ID": 4837
+        },
+        {
+          "Name": "OBJ-SUNBERRYFRUIT",
+          "ID": 4838
+        },
+        {
+          "Name": "OBJ-YSALAMIRITREE",
+          "ID": 5844
+        },
+        {
+          "Name": "ANIMAL-GIZKA",
+          "ID": 6232
+        },
+        {
+          "Name": "ANIMAL-KOWAKMONKEYLIZ",
+          "ID": 6334
+        },
+        {
+          "Name": "ANIMAL-GORG",
+          "ID": 6838
+        },
+        {
+          "Name": "ANIMAL-BAGERASET",
+          "ID": 7393
+        },
+        {
+          "Name": "ANIMAL-VARACTYL",
+          "ID": 7395
+        },
+        {
+          "Name": "ANIMAL-BOGLING",
+          "ID": 7397
+        },
+        {
+          "Name": "ANIMAL-BOGRAT",
+          "ID": 7399
+        },
+        {
+          "Name": "ANIMAL-SPLOX",
+          "ID": 7401
+        },
+        {
+          "Name": "ANIMAL-ZAUR",
+          "ID": 7403
+        },
+        {
+          "Name": "ANIMAL-SLYYYG",
+          "ID": 7410
+        },
+        {
+          "Name": "ANIMAL-TACH",
+          "ID": 7412
+        },
+        {
+          "Name": "ANIMAL-PHILLAK",
+          "ID": 7414
+        },
+        {
+          "Name": "ANIMAL-ICETROMPER",
+          "ID": 7416
+        },
+        {
+          "Name": "ANIMAL-NERF_MOUNTAIN",
+          "ID": 7418
+        },
+        {
+          "Name": "ANIMAL-NERF_TUNDRA",
+          "ID": 7420
+        },
+        {
+          "Name": "ANIMAL-NERF_STEPPE",
+          "ID": 7422
+        },
+        {
+          "Name": "ANIMAL-BORMU",
+          "ID": 7426
+        },
+        {
+          "Name": "ANIMAL-FLUTTERPLUME",
+          "ID": 7428
+        },
+        {
+          "Name": "ANIMAL-GRAZER",
+          "ID": 7431
+        },
+        {
+          "Name": "ANIMAL-GROPHET",
+          "ID": 7433
+        },
+        {
+          "Name": "ANIMAL-KATHHOUND",
+          "ID": 7435
+        },
+        {
+          "Name": "ANIMAL-KLORSLUG",
+          "ID": 7437
+        },
+        {
+          "Name": "ANIMAL-IRAIDA",
+          "ID": 7441
+        },
+        {
+          "Name": "ANIMAL-SANDTUSKER",
+          "ID": 7453
+        },
+        {
+          "Name": "ANIMAL-SHYRACK",
+          "ID": 7455
+        },
+        {
+          "Name": "ANIMAL-BARBEDGINX",
+          "ID": 7466
+        },
+        {
+          "Name": "ANIMAL-SWAMPGINX",
+          "ID": 7468
+        },
+        {
+          "Name": "ANIMAL-BOGWING",
+          "ID": 7470
+        },
+        {
+          "Name": "ANIMAL-ICEBOGWING",
+          "ID": 7473
+        },
+        {
+          "Name": "ANIMAL-CHEMILIZARD",
+          "ID": 7476
+        },
+        {
+          "Name": "ANIMAL-LOBEL",
+          "ID": 7478
+        },
+        {
+          "Name": "ANIMAL-DESERTLOBEL",
+          "ID": 7480
+        },
+        {
+          "Name": "ANIMAL-LISK",
+          "ID": 7496
+        },
+        {
+          "Name": "ANIMAL-MTNTAUNTAUN",
+          "ID": 7500
+        },
+        {
+          "Name": "ANIMAL-OROBIRD",
+          "ID": 7502
+        },
+        {
+          "Name": "ANIMAL-OROBIRDCHICK",
+          "ID": 7504
+        },
+        {
+          "Name": "ANIMAL-RAPTOR",
+          "ID": 7506
+        },
+        {
+          "Name": "ANIMAL-TONITRAN",
+          "ID": 7508
+        },
+        {
+          "Name": "ANIMAL-RILL",
+          "ID": 7512
+        },
+        {
+          "Name": "ANIMAL-SLEEN",
+          "ID": 7518
+        },
+        {
+          "Name": "ANIMAL-UXIBEAST",
+          "ID": 7522
+        },
+        {
+          "Name": "ANIMAL-WINGMAW",
+          "ID": 7526
+        },
+        {
+          "Name": "ANIMAL-WRAID",
+          "ID": 7528
+        },
+        {
+          "Name": "ANIMAL-XUVVA",
+          "ID": 7530
+        },
+        {
+          "Name": "ANIMAL-BAZNITCH",
+          "ID": 7532
+        },
+        {
+          "Name": "ANIMAL-NUNA",
+          "ID": 7534
+        },
+        {
+          "Name": "ANIMAL-BLURRG_DESERT",
+          "ID": 7585
+        },
+        {
+          "Name": "ANIMAL-BLURRG_FOREST",
+          "ID": 7587
+        },
+        {
+          "Name": "ANIMAL-BLURRG_JUNGLE",
+          "ID": 7589
+        },
+        {
+          "Name": "ANIMAL-BLURRG_SEA",
+          "ID": 7591
+        },
+        {
+          "Name": "ANIMAL-BLURRG_SWAMP",
+          "ID": 7593
+        },
+        {
+          "Name": "ANIMAL-BLURRG_VULCAN",
+          "ID": 7595
+        },
+        {
+          "Name": "ANIMAL-NERF_FOREST",
+          "ID": 7597
+        },
+        {
+          "Name": "ANIMAL-EXOBOAR",
+          "ID": 7606
+        },
+        {
+          "Name": "ANIMAL-FERRAZIDHOUND",
+          "ID": 7608
+        },
+        {
+          "Name": "ANIMAL-GFLUTTERPLUME",
+          "ID": 7620
+        },
+        {
+          "Name": "ANIMAL-LUGGABEAST",
+          "ID": 7625
+        },
+        {
+          "Name": "ANIMAL-ZELDRATE",
+          "ID": 7635
+        },
+        {
+          "Name": "ANIMAL-RALUGG",
+          "ID": 7655
+        },
+        {
+          "Name": "ANIMAL-SCAZZ",
+          "ID": 7659
+        },
+        {
+          "Name": "ANIMAL-HORRANTH",
+          "ID": 7661
+        },
+        {
+          "Name": "ANIMAL-BASPOORGLIDER",
+          "ID": 7673
+        },
+        {
+          "Name": "ANIMAL-RAYBOO",
+          "ID": 7676
+        },
+        {
+          "Name": "ANIMAL-ARKONOK",
+          "ID": 7685
+        },
+        {
+          "Name": "ANIMAL-WILDARKONOK",
+          "ID": 7738
+        },
+        {
+          "Name": "ANIMAL-GREFNA",
+          "ID": 7741
+        },
+        {
+          "Name": "ANIMAL-SALKYHOUND",
+          "ID": 7752
+        },
+        {
+          "Name": "ANIMAL-SANDWORM",
+          "ID": 7754
+        },
+        {
+          "Name": "ANIMAL-CHELDU",
+          "ID": 7805
+        },
+        {
+          "Name": "ANIMAL-MANTORR",
+          "ID": 7809
+        },
+        {
+          "Name": "ANIMAL-SKEERIS",
+          "ID": 7813
+        },
+        {
+          "Name": "ANIMAL-SLYBEX",
+          "ID": 7815
+        },
+        {
+          "Name": "ANIMAL_THALASIREN",
+          "ID": 7939
+        },
+        {
+          "Name": "OBJ-FOOD_EGG",
+          "ID": 7959
+        }
+      ]
+    },
+    {
+      "Resource": "Wood",
+      "Types": [
+        {
+          "Name": "OBJ-LKASHTREE",
+          "ID": 26
+        },
+        {
+          "Name": "OBJ-CARBONA2",
+          "ID": 217
+        },
+        {
+          "Name": "OBJ-TIMBERA",
+          "ID": 348
+        },
+        {
+          "Name": "OBJ-TIMBERC",
+          "ID": 349
+        },
+        {
+          "Name": "OBJ-TIMBERF",
+          "ID": 350
+        },
+        {
+          "Name": "OBJ-TIMBERE",
+          "ID": 351
+        },
+        {
+          "Name": "OBJ-TIMBERD",
+          "ID": 411
+        },
+        {
+          "Name": "OBJ-TIMBERG",
+          "ID": 413
+        },
+        {
+          "Name": "OBJ-TIMBERB",
+          "ID": 414
+        },
+        {
+          "Name": "OBJ-CARBONA",
+          "ID": 1117
+        },
+        {
+          "Name": "OBJ-TREEROOT2",
+          "ID": 1152
+        },
+        {
+          "Name": "OBJ-TREEROOT3",
+          "ID": 1158
+        },
+        {
+          "Name": "OBJ-CARBONB",
+          "ID": 1160
+        },
+        {
+          "Name": "OBJ-CARBONC",
+          "ID": 1161
+        },
+        {
+          "Name": "OBJ-DEADGTREE",
+          "ID": 1277
+        },
+        {
+          "Name": "OBJ-TREEROOT1",
+          "ID": 1279
+        },
+        {
+          "Name": "OBJ-GREATREE",
+          "ID": 1280
+        },
+        {
+          "Name": "OBJ-CARBONB2",
+          "ID": 1341
+        },
+        {
+          "Name": "OBJ-TIMBERA",
+          "ID": 1906
+        },
+        {
+          "Name": "OBJ-BULLION",
+          "ID": 1923
+        },
+        {
+          "Name": "OBJ-MINERAL",
+          "ID": 1924
+        },
+        {
+          "Name": "OBJ-TIMBERO",
+          "ID": 1926
+        },
+        {
+          "Name": "OBJ-TIMBERP",
+          "ID": 1927
+        },
+        {
+          "Name": "OBJ-CARBONC",
+          "ID": 2089
+        },
+        {
+          "Name": "OBJ-CARBONC2",
+          "ID": 2090
+        },
+        {
+          "Name": "OBJ-CARBONSNOW",
+          "ID": 2092
+        },
+        {
+          "Name": "OBJ-CARBONSNOW2",
+          "ID": 2093
+        },
+        {
+          "Name": "OBJ-TIMBERBAMBOO",
+          "ID": 2160
+        },
+        {
+          "Name": "OBJ-TIMBERI",
+          "ID": 2161
+        },
+        {
+          "Name": "OBJ-TIMBERJ",
+          "ID": 2162
+        },
+        {
+          "Name": "OBJ-TIMBERK",
+          "ID": 2163
+        },
+        {
+          "Name": "OBJ-TIMBERK2",
+          "ID": 2164
+        },
+        {
+          "Name": "OBJ-TIMBERL",
+          "ID": 2165
+        },
+        {
+          "Name": "OBJ-TIMBERM",
+          "ID": 2166
+        },
+        {
+          "Name": "OBJ-TIMBERN",
+          "ID": 2167
+        },
+        {
+          "Name": "Kelp",
+          "ID": 2555
+        },
+        {
+          "Name": "OBJ-TIMBERQ",
+          "ID": 2610
+        },
+        {
+          "Name": "OBJ-CARBONBROWN",
+          "ID": 2772
+        },
+        {
+          "Name": "OBJ-CARBONFROST",
+          "ID": 2775
+        },
+        {
+          "Name": "OBJ-CARBONGREEN",
+          "ID": 2777
+        },
+        {
+          "Name": "OBJ-TIMBERR",
+          "ID": 3134
+        },
+        {
+          "Name": "Carbon Crystals",
+          "ID": 3236
+        },
+        {
+          "Name": "Carbon Crystals",
+          "ID": 3237
+        },
+        {
+          "Name": "OBJ-TIMBERS",
+          "ID": 3445
+        },
+        {
+          "Name": "OBJ-TIMBERBUBSE",
+          "ID": 3446
+        },
+        {
+          "Name": "OBJ-TIMBERU",
+          "ID": 3923
+        },
+        {
+          "Name": "OBJ-CARBONCR",
+          "ID": 4115
+        },
+        {
+          "Name": "OBJ-TIMBERV",
+          "ID": 4156
+        },
+        {
+          "Name": "OBJ-TIMBERW",
+          "ID": 4157
+        },
+        {
+          "Name": "OBJ-TIMBERBX",
+          "ID": 4186
+        },
+        {
+          "Name": "OBJ-SCRAP-CARBON",
+          "ID": 4273
+        },
+        {
+          "Name": "OBJ-TIMBERZ",
+          "ID": 4564
+        },
+        {
+          "Name": "OBJ-TIMBERMEGALEAF",
+          "ID": 4836
+        },
+        {
+          "Name": "OBJ-TIMBERKAPOK",
+          "ID": 4839
+        },
+        {
+          "Name": "OBJ-TIMBERKENALPA",
+          "ID": 4840
+        },
+        {
+          "Name": "OBJ-TIMBERVWELIUS",
+          "ID": 4841
+        },
+        {
+          "Name": "OBJ-TIMBERAZERON",
+          "ID": 4936
+        },
+        {
+          "Name": "OBJ-CARBONCHR",
+          "ID": 4957
+        },
+        {
+          "Name": "OBJ-TIMBERRUTIGER",
+          "ID": 4962
+        },
+        {
+          "Name": "OBJ-TIMBERBINKA",
+          "ID": 5224
+        },
+        {
+          "Name": "OBJ-TIMBERREKNEW",
+          "ID": 5225
+        },
+        {
+          "Name": "OBJ-TIMBERM",
+          "ID": 5226
+        },
+        {
+          "Name": "OBJ-TIMBERM",
+          "ID": 5227
+        },
+        {
+          "Name": "OBJ-TIMBERM",
+          "ID": 5228
+        },
+        {
+          "Name": "OBJ-CARBONGRAY",
+          "ID": 6345
+        },
+        {
+          "Name": "OBJ-STRAGGLER_JUNGLE",
+          "ID": 6849
+        },
+        {
+          "Name": "OBJ-TIMBER_PALMCC",
+          "ID": 7067
+        },
+        {
+          "Name": "OBJ-TIMBERWROSHYR",
+          "ID": 7352
+        },
+        {
+          "Name": "OBJ-TIMBERP",
+          "ID": 7682
+        },
+        {
+          "Name": "OBJ-TIMBER_PALMCC",
+          "ID": 7932
+        }
+      ]
+    },
+    {
+      "Resource": "Stone",
+      "Types": [
+        {
+          "Name": "OBJ-MINERAL",
+          "ID": 102
+        },
+        {
+          "Name": "OBJ-MINERALB",
+          "ID": 1159
+        },
+        {
+          "Name": "OBJ-MINERAL",
+          "ID": 2473
+        },
+        {
+          "Name": "OBJ-MINERAL",
+          "ID": 4120
+        },
+        {
+          "Name": "OBJ-SCRAP-ORE",
+          "ID": 4275
+        }
+      ]
+    },
+    {
+      "Resource": "Gold",
+      "Types": [
+        {
+          "Name": "OBJ-BULLION",
+          "ID": 66
+        },
+        {
+          "Name": "OBJ-BULLION2",
+          "ID": 1375
+        },
+        {
+          "Name": "OBJ-BULLION-SMALL",
+          "ID": 2472
+        },
+        {
+          "Name": "OBJ-SCRAP-NOVA",
+          "ID": 4274
+        },
+        {
+          "Name": "RS Nova Stockpile",
+          "ID": 4681
+        },
+        {
+          "Name": "OBJ-BULLION-600",
+          "ID": 4804
+        },
+        {
+          "Name": "OBJ-BULLION-400",
+          "ID": 4805
+        },
+        {
+          "Name": "OBJ-BULLION-200",
+          "ID": 4806
+        }
+      ]
+    }
+  ]
+}

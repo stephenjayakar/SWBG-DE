@@ -1,0 +1,28 @@
+; REBEL/dip-boomer/1
+(defrule
+  (civ-selected 2)
+  (game-time > 10)
+  =>
+  (set-goal cr-personality 2)
+  (disable-self)
+)
+; REBEL/dip-boomer/2
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 2)
+  (current-age < 3)
+  (not (goal cr-rush-control cr-BOOMING))
+  =>
+  (set-goal cr-rush-control cr-BOOMING)
+  (disable-self)
+)
+; REBEL/dip-boomer/3
+(defrule
+  (civ-selected 2)
+  (current-age >= 2)
+  (or (goal cr-halt-worker cr-NO) (unit-type-count cr-unit-worker-count-line < cr-twenty-percent-pop))
+  (civilian-population < cr-fifty-percent-pop)
+  (can-train cr-unit-worker)
+  =>
+  (train cr-unit-worker)
+)

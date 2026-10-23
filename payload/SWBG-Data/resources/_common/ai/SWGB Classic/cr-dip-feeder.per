@@ -1,0 +1,236 @@
+; REBEL/dip-feeder/1
+(defrule
+  (civ-selected 2)
+  (difficulty < easy)
+  (game-time < 30)
+  (or (player-computer any-ally) (player-human any-ally))
+  =>
+  (set-goal cr-personality cr-NOTICE)
+  (disable-self)
+)
+; REBEL/dip-feeder/2
+(defrule
+  (civ-selected 2)
+  (game-time > 30)
+  (not (player-in-game any-ally))
+  =>
+  (set-goal cr-personality 0)
+  (disable-self)
+)
+; REBEL/dip-feeder/3
+(defrule
+  (civ-selected 2)
+  (taunt-detected any-ally 221)
+  =>
+  (set-goal cr-rush-control cr-CASTLE)
+  (set-goal cr-personality 0)
+  (acknowledge-taunt this-any-ally 221)
+  (disable-self)
+)
+; REBEL/dip-feeder/4
+(defrule
+  (civ-selected 2)
+  (goal cr-personality cr-NOTICE)
+  =>
+  (set-goal cr-personality 1)
+  (chat-to-player-using-id every-ally 942401)
+  (disable-self)
+)
+; REBEL/dip-feeder/5
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (current-age < 3)
+  (not (goal cr-rush-control cr-IMPERIAL))
+  =>
+  (set-goal cr-rush-control cr-IMPERIAL)
+)
+; REBEL/dip-feeder/6
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal cr-wonder-attempt cr-POSSIBLE)
+  =>
+  (set-goal cr-wonder-attempt cr-NO)
+)
+; REBEL/dip-feeder/7
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (or (and (current-age == 1) (players-current-age any-ally >= 2)) (and (current-age == 2) (players-current-age any-ally == 3)))
+  =>
+  (set-goal cr-upgrade-conflict cr-NOTICE)
+)
+; REBEL/dip-feeder/8
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (building-type-count cr-bldg-spaceport > 0)
+  (players-population any-ally > 10)
+  =>
+  (chat-to-player-using-id every-ally 942072)
+  (disable-self)
+)
+; REBEL/dip-feeder/9
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (game-time > 900)
+  (or (players-population every-ally <= 10) (not (player-in-game any-ally)))
+  =>
+  (set-goal cr-personality 20)
+  (set-goal cr-rush-control cr-IMPERIAL)
+  (chat-to-player-using-id every-ally 942074)
+  (disable-self)
+)
+#load-if-not-defined TEAMS-LOCKED
+; REBEL/dip-feeder/10
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 20)
+  (difficulty <= hard)
+  (players-stance any-human ally)
+  =>
+  (chat-to-player-using-id every-ally 942075)
+  (set-stance every-computer ally)
+  (set-stance this-any-human enemy)
+  (set-goal cr-personality 10)
+  (disable-self)
+)
+#end-if
+; REBEL/dip-feeder/11
+(defrule
+  (civ-selected 2)
+  (true)
+  =>
+  (set-goal 29 cr-YES)
+  (disable-self)
+)
+; REBEL/dip-feeder/12
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-NO)
+  =>
+  (set-goal 29 cr-YES)
+)
+; REBEL/dip-feeder/13
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (town-under-attack)
+  =>
+  (set-goal 29 cr-NO)
+)
+; REBEL/dip-feeder/14
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-YES)
+  (taunt-detected any-ally 4)
+  (wood-amount > 100)
+  =>
+  (release-escrow wood)
+  (tribute-to-player this-any-ally wood 100)
+  (acknowledge-taunt this-any-ally 4)
+  (chat-local-to-self "Tribute carbon")
+)
+; REBEL/dip-feeder/15
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-YES)
+  (taunt-detected any-ally 3)
+  (food-amount > 100)
+  =>
+  (release-escrow food)
+  (tribute-to-player this-any-ally food 100)
+  (acknowledge-taunt this-any-ally 3)
+  (chat-local-to-self "Tribute food")
+)
+; REBEL/dip-feeder/16
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-YES)
+  (taunt-detected any-ally 5)
+  (gold-amount > 100)
+  =>
+  (release-escrow gold)
+  (tribute-to-player this-any-ally gold 100)
+  (acknowledge-taunt this-any-ally 5)
+  (chat-local-to-self "Tribute nova")
+)
+; REBEL/dip-feeder/17
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-YES)
+  (taunt-detected any-ally 6)
+  (stone-amount > 100)
+  =>
+  (release-escrow stone)
+  (tribute-to-player this-any-ally stone 100)
+  (acknowledge-taunt this-any-ally 6)
+  (chat-local-to-self "Tribute metal")
+)
+; REBEL/dip-feeder/18
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-YES)
+  (player-in-game any-ally)
+  (building-type-count cr-bldg-spaceport > 0)
+  (up-compare-goal 116 c:< 240)
+  (wood-amount > 300)
+  =>
+  (release-escrow wood)
+  (tribute-to-player this-any-ally wood 100)
+  (chat-to-player-using-id this-any-ally 942076)
+  (chat-local-to-self "Tribute carbon")
+)
+; REBEL/dip-feeder/19
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-YES)
+  (player-in-game any-ally)
+  (building-type-count cr-bldg-spaceport > 0)
+  (up-compare-goal 116 c:< 240)
+  (food-amount > 200)
+  =>
+  (release-escrow food)
+  (tribute-to-player this-any-ally food 100)
+  (chat-to-player-using-id this-any-ally 942077)
+  (chat-local-to-self "Tribute food")
+)
+; REBEL/dip-feeder/20
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-YES)
+  (player-in-game any-ally)
+  (building-type-count cr-bldg-spaceport > 0)
+  (up-compare-goal 116 c:< 240)
+  (gold-amount > 200)
+  =>
+  (release-escrow gold)
+  (tribute-to-player this-any-ally gold 100)
+  (chat-to-player-using-id this-any-ally 942078)
+  (chat-local-to-self "Tribute nova")
+)
+; REBEL/dip-feeder/21
+(defrule
+  (civ-selected 2)
+  (goal cr-personality 1)
+  (goal 29 cr-YES)
+  (player-in-game any-ally)
+  (building-type-count cr-bldg-spaceport > 0)
+  (up-compare-goal 116 c:< 240)
+  (stone-amount > 100)
+  =>
+  (release-escrow stone)
+  (tribute-to-player this-any-ally stone 100)
+  (chat-to-player-using-id this-any-ally 942079)
+  (chat-local-to-self "Tribute metal")
+)

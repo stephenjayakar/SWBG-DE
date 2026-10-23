@@ -1,0 +1,7 @@
+{
+  "Author": "Local SWGB port project",
+  "CacheStatus": 0,
+  "Description": "Star Wars Galactic Battlegrounds Galactic Empire and Rebel Alliance for AoE2 DE: game data (DAT, tech trees, civ tables). Select it as the Data Mod. Needs SWBG-Data, which the installer builds from your own SWGB install. Same game files as published mod 549437 version 1.7.",
+  "Title": "SWBG-Logic",
+  "Version": "1.7"
+}

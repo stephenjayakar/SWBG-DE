@@ -1,0 +1,7 @@
+{
+  "Author": "Local SWGB port project",
+  "CacheStatus": 0,
+  "Description": "Star Wars Galactic Battlegrounds graphics, sounds, music, strings, maps, XS and AI for the SWBG-Logic data mod, generated from your own SWGB + Expanding Fronts install. Enable it only together with SWBG-Logic (or published mod 549437).",
+  "Title": "SWBG-Data",
+  "Version": "0.0.2-dev"
+}

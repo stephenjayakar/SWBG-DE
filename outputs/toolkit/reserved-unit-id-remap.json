@@ -1,0 +1,397 @@
+{
+  "description": "SWGB unit IDs moved out of DE reserved group-ID range 900-999",
+  "remap": {
+    "900": {
+      "new": 1431,
+      "name": "BOAT-SLASN"
+    },
+    "901": {
+      "new": 1598,
+      "name": "UNIT-LZIANF_D"
+    },
+    "902": {
+      "new": 1599,
+      "name": "BOAT-SLASW"
+    },
+    "903": {
+      "new": 1600,
+      "name": "UNIT-M1TRA"
+    },
+    "904": {
+      "new": 1601,
+      "name": "BOAT-SLASG"
+    },
+    "905": {
+      "new": 1602,
+      "name": "UNIT-M1TRA_D"
+    },
+    "906": {
+      "new": 1603,
+      "name": "BOAT-SLASR"
+    },
+    "907": {
+      "new": 1604,
+      "name": "UNIT-M1TRC"
+    },
+    "908": {
+      "new": 1605,
+      "name": "BOAT-SFLSE"
+    },
+    "909": {
+      "new": 1606,
+      "name": "UNIT-M1TRC_D"
+    },
+    "910": {
+      "new": 1607,
+      "name": "BOAT-SFLSN"
+    },
+    "911": {
+      "new": 1608,
+      "name": "UNIT-M2TRA"
+    },
+    "912": {
+      "new": 1609,
+      "name": "BOAT-SFLSW"
+    },
+    "913": {
+      "new": 1610,
+      "name": "UNIT-M2TRA_D"
+    },
+    "914": {
+      "new": 1611,
+      "name": "BOAT-SFLSG"
+    },
+    "915": {
+      "new": 1612,
+      "name": "UNIT-M2TRC"
+    },
+    "916": {
+      "new": 1613,
+      "name": "BOAT-SFLSR"
+    },
+    "917": {
+      "new": 1614,
+      "name": "UNIT-M2TRC_D"
+    },
+    "918": {
+      "new": 1615,
+      "name": "BOAT-SMISE"
+    },
+    "919": {
+      "new": 1616,
+      "name": "UNIT-M3TRA"
+    },
+    "920": {
+      "new": 1617,
+      "name": "BOAT-SMISN"
+    },
+    "921": {
+      "new": 1618,
+      "name": "CTRL-TANICA-RK"
+    },
+    "922": {
+      "new": 1619,
+      "name": "BOAT-SMISG"
+    },
+    "923": {
+      "new": 1620,
+      "name": "UNIT-M3TRC"
+    },
+    "924": {
+      "new": 1622,
+      "name": "BOAT-SMISR"
+    },
+    "925": {
+      "new": 1623,
+      "name": "CTRL-TANICA-RK_D"
+    },
+    "926": {
+      "new": 1624,
+      "name": "BOAT-SMISW"
+    },
+    "927": {
+      "new": 1625,
+      "name": "UNIT-MBIKA"
+    },
+    "928": {
+      "new": 1626,
+      "name": "BOAT-SHMSE"
+    },
+    "930": {
+      "new": 1627,
+      "name": "BOAT-SHMSN"
+    },
+    "931": {
+      "new": 1628,
+      "name": "UNIT-OCSPEM"
+    },
+    "932": {
+      "new": 1629,
+      "name": "UNIT-MBIKC"
+    },
+    "933": {
+      "new": 1630,
+      "name": "BLDG-FORTRESS2"
+    },
+    "934": {
+      "new": 1631,
+      "name": "EFFECT-LASLRGRED"
+    },
+    "935": {
+      "new": 1632,
+      "name": "EFFECT-LASLRGGRN"
+    },
+    "936": {
+      "new": 1633,
+      "name": "BLDG-LLAMBDASH"
+    },
+    "937": {
+      "new": 1634,
+      "name": "UNIT-LTIEDEF"
+    },
+    "938": {
+      "new": 1635,
+      "name": "UNIT-LSANDCRWL"
+    },
+    "939": {
+      "new": 1636,
+      "name": "UNIT-OMEDE"
+    },
+    "940": {
+      "new": 1637,
+      "name": "UNIT-OMEDE_D"
+    },
+    "941": {
+      "new": 1638,
+      "name": "UNIT-OMEDG"
+    },
+    "942": {
+      "new": 1639,
+      "name": "UNIT-OMEDG_D"
+    },
+    "943": {
+      "new": 1640,
+      "name": "UNIT-OMEDN"
+    },
+    "944": {
+      "new": 1641,
+      "name": "UNIT-OMEDN_D"
+    },
+    "945": {
+      "new": 1642,
+      "name": "UNIT-OMEDR"
+    },
+    "946": {
+      "new": 1643,
+      "name": "UNIT-OMEDR_D"
+    },
+    "947": {
+      "new": 1644,
+      "name": "UNIT-OMEDW"
+    },
+    "948": {
+      "new": 1645,
+      "name": "UNIT-OMEDW_D"
+    },
+    "949": {
+      "new": 1646,
+      "name": "UNIT-LTRNJAILER"
+    },
+    "950": {
+      "new": 1647,
+      "name": "BLDG-LWCOLONY-S"
+    },
+    "951": {
+      "new": 1648,
+      "name": "UNIT-GBLCE"
+    },
+    "952": {
+      "new": 1649,
+      "name": "UNIT-GBLCG"
+    },
+    "953": {
+      "new": 1650,
+      "name": "UNIT-GBLCN"
+    },
+    "954": {
+      "new": 1651,
+      "name": "UNIT-GBLCR"
+    },
+    "955": {
+      "new": 1652,
+      "name": "UNIT-GBLCW"
+    },
+    "957": {
+      "new": 1653,
+      "name": "UNIT-MH1TA"
+    },
+    "958": {
+      "new": 1654,
+      "name": "UNIT-MH1TA_D"
+    },
+    "959": {
+      "new": 1655,
+      "name": "UNIT-MH1TC"
+    },
+    "960": {
+      "new": 1656,
+      "name": "UNIT-MH1TC_D"
+    },
+    "961": {
+      "new": 1657,
+      "name": "UNIT-GBNTE"
+    },
+    "962": {
+      "new": 1658,
+      "name": "UNIT-GBNTE_D"
+    },
+    "963": {
+      "new": 1659,
+      "name": "UNIT-GBNTG"
+    },
+    "964": {
+      "new": 1660,
+      "name": "UNIT-GBNTG_D"
+    },
+    "965": {
+      "new": 1661,
+      "name": "UNIT-GBNTN"
+    },
+    "966": {
+      "new": 1662,
+      "name": "UNIT-GBNTN_D"
+    },
+    "967": {
+      "new": 1663,
+      "name": "UNIT-GBNTR"
+    },
+    "968": {
+      "new": 1664,
+      "name": "UNIT-GBNTR_D"
+    },
+    "969": {
+      "new": 1665,
+      "name": "UNIT-GBNTW"
+    },
+    "970": {
+      "new": 1666,
+      "name": "UNIT-GBNTW_D"
+    },
+    "971": {
+      "new": 1667,
+      "name": "UNIT-GEUNE"
+    },
+    "972": {
+      "new": 1668,
+      "name": "UNIT-GEUNE_D"
+    },
+    "973": {
+      "new": 1669,
+      "name": "UNIT-MH2TA"
+    },
+    "974": {
+      "new": 1670,
+      "name": "UNIT-MH2TA_D"
+    },
+    "975": {
+      "new": 1671,
+      "name": "UNIT-GEUNG2"
+    },
+    "976": {
+      "new": 1672,
+      "name": "UNIT-GEUNG2_D"
+    },
+    "977": {
+      "new": 1673,
+      "name": "UNIT-GEUNN"
+    },
+    "978": {
+      "new": 1674,
+      "name": "UNIT-GEUNN_D"
+    },
+    "979": {
+      "new": 1675,
+      "name": "UNIT-GEUNR"
+    },
+    "980": {
+      "new": 1676,
+      "name": "UNIT-MH2TC"
+    },
+    "981": {
+      "new": 1677,
+      "name": "UNIT-GEUNW"
+    },
+    "982": {
+      "new": 1678,
+      "name": "UNIT-GEUNW_D"
+    },
+    "983": {
+      "new": 1679,
+      "name": "UNIT-GUBLCE"
+    },
+    "984": {
+      "new": 1680,
+      "name": "UNIT-GUBLCG"
+    },
+    "985": {
+      "new": 1681,
+      "name": "UNIT-GUBLCN"
+    },
+    "986": {
+      "new": 1682,
+      "name": "UNIT-GUBLCR"
+    },
+    "987": {
+      "new": 1683,
+      "name": "UNIT-GUBLCW"
+    },
+    "988": {
+      "new": 1684,
+      "name": "UNIT-MH2TC_D"
+    },
+    "989": {
+      "new": 1685,
+      "name": "UNIT-MH3TA"
+    },
+    "990": {
+      "new": 1686,
+      "name": "UNIT-MH3TA_D"
+    },
+    "991": {
+      "new": 1687,
+      "name": "UNIT-MH3TC"
+    },
+    "992": {
+      "new": 1688,
+      "name": "PROJ-MH3TE-AIR"
+    },
+    "993": {
+      "new": 1689,
+      "name": "UNIT-GUNIE"
+    },
+    "994": {
+      "new": 1690,
+      "name": "UNIT-GUNIE_D"
+    },
+    "995": {
+      "new": 1691,
+      "name": "UNIT-GUNIW_D"
+    },
+    "996": {
+      "new": 1692,
+      "name": "UNIT-OMEDA"
+    },
+    "997": {
+      "new": 1693,
+      "name": "UNIT-OMEDA_D"
+    },
+    "998": {
+      "new": 1694,
+      "name": "ANIMAL-PREDATORC"
+    },
+    "999": {
+      "new": 1695,
+      "name": "UNIT-LLEIR-TTRP"
+    }
+  }
+}

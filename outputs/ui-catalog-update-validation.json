@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "installed": true,
+  "verified_baseline_files": 4892,
+  "changes": [
+    {
+      "path": "widgetui/icons.json",
+      "added_entries": 262,
+      "before_sha256": "6d64d101504c8e9a576794fc62caf2ad6047dfe5d627220449e84d7b3f6dadec",
+      "after_sha256": "0acc4db5b27f82d2ffdb5352809c1dce0fff0e0fdde8b79f9d77f3df3a240b61",
+      "native_sha256": "a8b9e69303223d9c39adb6653aaf0a49873ac98072bc57502867fd78e6b97328"
+    },
+    {
+      "path": "widgetui/materials.json",
+      "added_entries": 146,
+      "before_sha256": "1116e94d1c76b4fd4e5bd56aec4dd36a0319b13d3ad39c15587dccc53a9e2bd4",
+      "after_sha256": "29323eaa778b629bf8c6a7f25140552085a22063bb70f468ded3bdc607f1c95e",
+      "native_sha256": "5a21d3b1ed2f346d5b2718af70e3be44ff981eeb3174581a6c83184ed1ab0e7d"
+    }
+  ],
+  "dat_unchanged": true,
+  "assets_unchanged": true,
+  "existing_icon_mappings_unchanged": true,
+  "engine_verified": false,
+  "dataset_load_fix_confirmed": false
+}
